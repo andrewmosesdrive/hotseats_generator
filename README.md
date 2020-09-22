@@ -1,0 +1,1 @@
+# hotseats_generator
