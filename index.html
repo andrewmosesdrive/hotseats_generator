@@ -21,7 +21,32 @@
   </head>
   <body>
     <div class="container">
-      <h3>Hello Y'all</h3>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center">Hotseats Generator</a>
+          <ul id="nav-mobile" class="left">
+            <li><a href="" id="submit-btn">Submit Question</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="new-question" id="new-question"></div>
+      <!-- Modal Trigger -->
+      <a data-target="modal1" class="modal">Modal</a>
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Alert</h4>
+          <p>You can use this as a alert!</p>
+        </div>
+        <div class="modal-footer">
+          <a
+            href="#!"
+            class="modal-action modal-close waves-effect waves-green btn-flat"
+            >OK</a
+          >
+        </div>
+      </div>
 
       <div class="checkbox-container">
         <p>
@@ -83,6 +108,7 @@
           ><i class="material-icons left">cloud</i>Let's go!</a
         >
       </div>
+      <div class="reload" id="reload"></div>
     </div>
     <!-- jquery -->
     <script
