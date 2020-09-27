@@ -21,33 +21,52 @@
   </head>
   <body>
     <div class="container">
+      <!-- Dropdown Structure -->
+      <ul id="dropdown1" class="dropdown-content">
+        <li>
+          <a href="#!" id="submit-btn"
+            ><i class="material-icons left">create</i>Submit Question</a
+          >
+        </li>
+        <li class="divider"></li>
+        <li>
+          <a href="#!" id="problem-btn"
+            ><i class="material-icons left">report_problem</i>Report Problem</a
+          >
+        </li>
+      </ul>
       <nav>
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo center">Hotseats Generator</a>
-          <ul id="nav-mobile" class="left">
-            <li><a href="" id="submit-btn">Submit Question</a></li>
+          <a href="#!" id="logo-reload" class="brand-logo center"
+            >Hotseats Generator</a
+          >
+          <ul class="right">
+            <!-- Dropdown Trigger -->
+            <li>
+              <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+                ><i class="material-icons right">arrow_drop_down_circle</i></a
+              >
+            </li>
           </ul>
         </div>
       </nav>
-      <div class="new-question" id="new-question"></div>
-      <!-- Modal Trigger -->
-      <a data-target="modal1" class="modal">Modal</a>
 
       <!-- Modal Structure -->
-      <div id="modal1" class="modal">
+      <div id="modal" class="modal">
         <div class="modal-content">
-          <h4>Alert</h4>
-          <p>You can use this as a alert!</p>
+          <h4>Modal Header</h4>
+          <p>A bunch of text</p>
         </div>
         <div class="modal-footer">
-          <a
-            href="#!"
-            class="modal-action modal-close waves-effect waves-green btn-flat"
-            >OK</a
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+            >Agree</a
           >
         </div>
       </div>
 
+      <div class="new-question" id="new-question"></div>
+
+      <!-- check boxes for topic choice -->
       <div class="checkbox-container">
         <p>
           <label>
@@ -104,12 +123,15 @@
             <span>USC</span>
           </label>
         </p>
-        <a class="waves-effect waves-light btn-large" id="run-btn"
-          ><i class="material-icons left">cloud</i>Let's go!</a
-        >
+        <div class="row">
+          <a class="waves-effect waves-light btn-large" id="run-btn"
+            ><i class="material-icons left">send</i>Send it</a
+          >
+        </div>
       </div>
       <div class="reload" id="reload"></div>
     </div>
+
     <!-- jquery -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"

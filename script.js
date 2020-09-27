@@ -1,62 +1,80 @@
 $(document).ready(() => {
-  // create array for each set of questions based on type, with objects holding question and answer
+  // create array for each set of questions based on type, with of final Array holding question and answer
   let mloQs = [
     {
-      question: "Question",
+      question: "Question1",
       answer: "Answer",
     },
     {
-      question: "Question",
+      question: "Question2",
       answer: "Answer",
     },
     {
-      question: "Question",
+      question: "Question3",
       answer: "Answer",
     },
     {
-      question: "Question",
+      question: "Question4",
       answer: "Answer",
     },
     {
-      question: "Question",
+      question: "Question5",
       answer: "Answer",
     },
   ];
   let gmkQs = [
     {
-      question: "Question",
+      question: "Question6",
       answer: "Answer",
     },
   ];
   let ethQs = [
     {
-      question: "Question",
+      question: "Question7",
       answer: "Answer",
     },
   ];
   let uscQs = [
     {
-      question: "Question",
+      question: "Question8",
       answer: "Answer",
     },
   ];
   let fedlawQs = [
     {
-      question: "Question",
+      question: "Question9",
+      answer: "Answer",
+    },
+    {
+      question: "Question10",
+      answer: "Answer",
+    },
+    {
+      question: "Question11",
       answer: "Answer",
     },
   ];
-  debugger
+
+  // navbar dropdown
+  $(".dropdown-trigger").dropdown();
+
+  // clicking the logo in the navbar causes the page to reload
+  $("#logo-reload").on("click", () => {
+    location.reload();
+  });
 
   $("#submit-btn").on("click", () => {
-    M.toast({html: "Oops! This feature isn't up and running yet"}, timeRemaining, 400)
-  })
+    M.toast({ html: "Oops! That feature isn't ready yet." });
+  });
 
+  $("#problem-btn").on("click", () => {
+    M.toast({ html: "Oops! That feature isn't ready yet." });
+  });
+  // array for all questions related to chosen topic to be pushed to
   let questionsArray = [];
-  console.log(questionsArray);
+  // console.log(questionsArray);
 
-  // create array for final questions to be randomized and read off
-
+  // when clicked, each chosen topic will push it's questions into questionArray
   $("#run-btn").on("click", () => {
     if ($("input[id='fed-law-box']").is(":checked")) {
       //   console.log("fedlaw");
@@ -78,32 +96,30 @@ $(document).ready(() => {
       // console.log("usc");
       questionsArray.push.apply(questionsArray, uscQs);
     }
+    
 
-    // console.log(questionsArray)
+    console.log(questionsArray);
 
+    // once all questions are pushed, deploy them
     deployQs();
-    console.log(deployQs)
+    // console.log(deployQs);
   });
 
+  // function for deploying questions, adding them to the page dynamically
   function deployQs() {
+    // first hide initial content
     let hideChecks = $(".checkbox-container");
     hideChecks.hide();
 
-    // if (questionsArray.length === 0) {
-      
-        // $(".modal").modal();
+    // loop through questions based on topic selection
+    for (let i = 0; i <= questionsArray.length; i++) {
 
-        // need to have modal pop up if no topics selected: oops, looks like you forgot to select a topic. please choose at least one!
-        // followed by page reload after modal ends (see materialize docs)
+      if (questionsArray.length === 0) {
+            M.toast({ html: "Oops! Looks like you forgot to choose a topic! Refresh the page to try again." });
 
-        // location.reload()
-    // }
-
-    for (let i = 0; i < questionsArray.length; i++) {
-
-        // need to make sure only one question pops up at a time, 
-        // populate new question on the page
-        let newQuestion = `
+      }
+      // create questions with temp literal & string interpolation
+      let newQuestion = `
         <div class="row">
           <div class="col s12 m12">
             <div class="card med blue-grey darken-1">
@@ -117,22 +133,19 @@ $(document).ready(() => {
           </div>
         </div>`;
 
+        console.log(questionsArray[i].question)
+      // append questions to page
       $("#new-question").append(newQuestion);
-
     }
 
-
+    // create a button to reload the page and add dynamically
     let restartBtn = `<a class="waves-effect waves-light btn-large" id="reload-btn">Reload</a
-    >`
+    >`;
     $("#reload").append(restartBtn);
 
+    // when clicked, reload
     $("#reload-btn").on("click", () => {
-
-        location.reload();
-    })
+      location.reload();
+    });
   }
-
-  // need click recognition for choices, try boolean? (if clicked === yes)
-
-  // need next/back buttons
 });
