@@ -26,8 +26,56 @@ $(document).ready(() => {
 
   let gmkQs = [
     {
-      question: "Question6",
-      answer: "Answer",
+      question: "After Fannie and Freddie have purchased loans, the bundling of those loans into mortgage backed securities and the subsequent sale on the secondary market is known as what?",
+      answer: "Securitization",
+    },
+    {
+      question: "What is the automated underwriting system for FHA and VA?",
+      answer: "TOTAL (Technology Open to Approved Lenders)",
+    },
+    {
+      question: "What is the minimum credit score for a conventional loan?",
+      answer: "620",
+    },
+    {
+      question: "What is the minimum credit score for an FHA loan?",
+      answer: "500",
+    },
+    {
+      question: "If a client has a credit score of 580 or above on an FHA loan, what is the maximum financing they can receive on a refinance?",
+      answer: "97.75%",
+    },
+    {
+      question: "Who are USDA loans meant for?",
+      answer: "People living in rural communities with low to moderate income",
+    },
+    {
+      question: "Which occupancy type(s) are allowed on FHA loans?",
+      answer: "Primary residence only",
+    },
+    {
+      question: "What is Entitlement and how is it different from the Guaranty?",
+      answer: "Entitlement is the amount a client is entitled to based on their service in the military, while Guaranty is how much the VA will give to the lender to 'close the gap' in the event that a home with a VA loan sells for less than the remaining principle balance after a foreclosure",
+    },
+    {
+      question: "What is a jumbo loan?",
+      answer: "A jumbo loan is a loan which meets all of the requirements set by Fannie and Freddie, but exceeds the loan limits set by the FHFA",
+    },
+    {
+      question: "What percent of the loan amount is the up-front mortgage insurance premium (UFMIP) on FHA loans?",
+      answer: "1.75%",
+    },
+    {
+      question: "What is a 'non-traditional' mortgage?",
+      answer: "Anything other than a 30-year fixed",
+    },
+    {
+      question: "What are the DTI requirements for a Conventional loan?",
+      answer: "28% housing, 36% total (up to 45% total with compensation factors)",
+    },
+    {
+      question: "What two parts make up the fully indexed rate on an ARM?",
+      answer: "The margin and the index",
     },
   ];
   console.log("GMK has " + gmkQs.length + " questions")
@@ -342,16 +390,145 @@ $(document).ready(() => {
 
   let tilaQs = [
     {
-      question: "",
-      answer: ""
+      question: "What does TILA stand for and what regulation letter is it?",
+      answer: "Truth in Lending Act, Reg Z"
     },
+    {
+      question: "Who does TILA govern?",
+      answer: "People or organizations who regularly extend credit"
+    },
+    {
+      question: "What kinds of costs does TILA govern?",
+      answer: "Finance charges"
+    },
+    {
+      question: "What is a finance charge?",
+      answer: "Costs/fees associated with obtaining the loan"
+    },
+    {
+      question: "What is a trigger term?",
+      answer: "Loan elements that require additional information to understand actual costs"
+    },
+    {
+      question: "What does TILA says advertisements must be?",
+      answer: "Clear and conspicuous"
+    },
+    {
+      question: "What is section 19 of TILA?",
+      answer: "MDIA (Mortgage Disclosure Improvement Act"
+    },
+    {
+      question: "Per TILA, what is the APR tolerance for adjustable rate mortgages?",
+      answer: ".25%"
+    },
+    {
+      question: "What does MDIA require from the borrower before charging non-refundable fees?",
+      answer: "Intent to proceed"
+    },
+    {
+      question: "Per TILA when is the soonest the borrower can close upon receiving their initial disclosures?",
+      answer: "7 business days"
+    },
+    {
+      question: "What section of TILA requires the delivery of the Note of Right to Cancel?",
+      answer: "Section 23"
+    },
+    {
+      question: "What is another name for a high cost loan under TILA?",
+      answer: "A covered loan (AKA HOEPA loan)"
+    },
+    {
+      question: "What does TILA's Valuation Independence rule say?",
+      answer: "Appraisers must be unbiased in determining value of property and act independently from any outside influence or coercion"
+    },
+    {
+      question: "Loans that meet QM standards provide more certainty in the secondary market for whom?",
+      answer: "Investors"
+    },
+    {
+      question: "What disclosure required by TILA informs borrowers of estimated costs for their closed-end mortgage loan?",
+      answer: "The loan estimate"
+    },
+    {
+      question: "What section of TILA has rules about MLO compensation?",
+      answer: "Section 36"
+    },
+    {
+      question: "What types of loans does the right to rescind apply to?",
+      answer: "Refinances on primary residences, reverse mortgages, HELOCs, and HELs"
+    },
+    {
+      question: "What section of TILA includes the Covered Loan Notice?",
+      answer: "Section 32"
+    },
+    
   ]
   console.log("TILA has " + tilaQs.length + " questions")
 
   let ecoaQs = [
     {
-      question: "",
-      answer: ""
+      question: "What is the regulation letter for ECOA?",
+      answer: "Reg B"
+    },
+    {
+      question: "What does ECOA stand for?",
+      answer: "Equal Credit Opportunity Act"
+    },
+    {
+      question: "What is the purpose of ECOA?",
+      answer: "To ensure that all people have the right to apply for an obtain credit"
+    },
+    {
+      question: "What section of the URLA helps ensure MLO's are following the guidelines of ECOA?",
+      answer: "Title X - Government monitoring information"
+    },
+    {
+      question: "When is it okay to inquire about race, ethnicity, gender, immigration status, marital status, or age?",
+      answer: "To determine if the borrower is eligible for special programs"
+    },
+    {
+      question: "What is an example of a time that it is okay to discriminate based on age?",
+      answer: "Reverse mortgage (62 or older), and at least 18 to obtain a mortgage"
+    },
+    {
+      question: "What is disparate treatment?",
+      answer: "Credit discrimination demonstrated when a lender treats an applicant or borrower differently based on one or more of ECOA's prohibited factors"
+    },
+    {
+      question: "What disclosure goes out once a decision is made in determining the borrowers application status?",
+      answer: "Notice of Action Taken"
+    },
+    {
+      question: "What does ECOA's Valuation Rule say?",
+      answer: "A copy of the appraisal must be provided to the borrower as soon as the MLO is done processing the report"
+    },
+    {
+      question: "What is another name for the Notice of Action Taken in the case of a credit denial?",
+      answer: "Adverse Action (Notice of Credit Denied)"
+    },
+    {
+      question: "What act was ECOA added to?",
+      answer: "CCPA (Consumer Credit Protection Act)"
+    },
+    {
+      question: "What is referred to as seemingly legal or neutral behavior which has a negative impact on a group of people?",
+      answer: "Disparate impact"
+    },
+    {
+      question: "What are examples of factors that ECOA prohibits basing credit decisions upon?",
+      answer: "Race, color, religion, national origin, gender, marital status, age (keep in mind disability and familial status, which are not listed)"
+    },
+    {
+      question: "What form of discriminatory behavior occurs when the discrimination is blatantly obvious?",
+      answer: "Overt evidence"
+    },
+    {
+      question: "How long does ECOA require the Notice of Credit Denied be retained",
+      answer: "25 months"
+    },
+    {
+      question: "Who is ultimately responsible for the accuracy of information on the application in the eyes of the low?",
+      answer: "The borrower"
     },
   ]
   console.log("ECOA has " + ecoaQs.length + " questions")
@@ -423,6 +600,26 @@ $(document).ready(() => {
       // console.log("usc");
       questionsArray.push.apply(questionsArray, uscQs);
     }
+    if ($("input[id='respa-box']").is(":checked")) {
+      //   console.log("fedlaw");
+      questionsArray.push.apply(questionsArray, respaQs);
+    }
+    if ($("input[id='tila-box']").is(":checked")) {
+      // console.log("ethics");
+      questionsArray.push.apply(questionsArray, tilaQs);
+    }
+    if ($("input[id='ecoa-box']").is(":checked")) {
+      // console.log("mlo");
+      questionsArray.push.apply(questionsArray, ecoaQs);
+    }
+    if ($("input[id='fha-box']").is(":checked")) {
+      // console.log("gmk");
+      questionsArray.push.apply(questionsArray, fhaQs);
+    }
+    if ($("input[id='disclosures-box']").is(":checked")) {
+      // console.log("usc");
+      questionsArray.push.apply(questionsArray, disclosureQs);
+    }
 
     console.log(questionsArray);
 
@@ -440,7 +637,7 @@ $(document).ready(() => {
     hideSendIt.hide();
 
     // loop through questions based on topic selection
-    for (let i = 0; i <= questionsArray.length; i++) {
+    for (let i = 0; i < questionsArray.length; i++) {
       if (questionsArray.length === 0) {
         M.toast({
           html:
@@ -461,7 +658,7 @@ $(document).ready(() => {
           </div>
         </div>`;
 
-      console.log(questionsArray[i].question);
+      // console.log(questionsArray[i].question);
       // append questions to page
       $("#new-question").append(newQuestion);
     }
