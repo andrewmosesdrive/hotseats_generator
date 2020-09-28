@@ -254,6 +254,23 @@ $(document).ready(() => {
       answer: "Answer",
     },
   ];
+  
+  // need to create more arrays for each new subtopic along with on clicks for each one to push to final array when send it is clicked!!!!!!!!!!!!!!!!!!!
+
+  let uscLength = uscQs.length
+  console.log("USC has " + uscLength + " questions")
+
+  let fedLawLength = fedlawQs.length
+  console.log("Fed Law has " + fedLawLength + " questions")
+
+  let ethicsLength = ethQs.length
+  console.log("Ethics has " + ethicsLength + " questions")
+
+  let gmkLength = gmkQs.length
+  console.log("GMK has " + gmkLength + " questions")
+
+  let mloLength = mloQs.length
+  console.log("MLO has " + mloLength + " questions")
 
   // navbar dropdown
   $(".dropdown-trigger").dropdown();
