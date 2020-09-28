@@ -22,18 +22,24 @@ $(document).ready(() => {
       answer: "Answer",
     },
   ];
+  console.log("MLO has " + mloQs.length + " questions")
+
   let gmkQs = [
     {
       question: "Question6",
       answer: "Answer",
     },
   ];
+  console.log("GMK has " + gmkQs.length + " questions")
+
   let ethQs = [
     {
       question: "Question7",
       answer: "Answer",
     },
   ];
+  console.log("Ethics has " + ethQs.length + " questions")
+
   let uscQs = [
     {
       question: "What is the NMLS?",
@@ -184,6 +190,8 @@ $(document).ready(() => {
       answer: "Civil penalties"
     }
   ];
+  console.log("USC has " + uscQs.length + " questions")
+
   let fedlawQs = [
     {
       question: "What are the three acts that make up the Do Not Call Laws?",
@@ -254,23 +262,125 @@ $(document).ready(() => {
       answer: "Answer",
     },
   ];
+  console.log("Fed Law has " + fedlawQs.length + " questions")
+
+  let respaQs = [
+    {
+      question: "What type of mortgage loans does RESPA govern?",
+      answer: "Mortgage loans secured by residential property"
+    },
+    {
+      question: "What is a traditional mortgage?",
+      answer: "A 30-year fixed"
+    },
+    {
+      question: "What does RESPA stand for?",
+      answer: "Real Estate Settlement Procedures Act"
+    },
+    {
+      question: "What is the purpose of RESPA?",
+      answer: "Ensure consumers can make informed decisions about real estate transactions by providing transparency into the costs of settlement"
+    },
+    {
+      question: "What is a settlement service?",
+      answer: "Any service provided in connection with the real estate transaction, specifically third party services"
+    },
+    {
+      question: "What is loss mitigation?",
+      answer: "An agreement between the borrower and servicer to make the loan more affordable by changing the terms (modification, forbearance, debt forgiveness)"
+    },
+    {
+      question: "What is the purpose of section 6 of RESPA?",
+      answer: "It sets general rules for Servicers with 4 main objectives"
+    },
+    {
+      question: "What is the purpose of section 8 of RESPA?",
+      answer: "It sets rules about referrals, referral fees, and kickbacks"
+    },
+    {
+      question: "What is the purpose of section 9 of RESPA?",
+      answer: "To provide clients the right to choose their own title agent"
+    },
+    {
+      question: "What is the purpose of section 10 of RESPA?",
+      answer: "To ensure escrow accounts are handled correctly and ethically"
+    },
+    {
+      question: "Which section of RESPA does the MSDS fall under?",
+      answer: "Section 6"
+    },
+    {
+      question: "What does the MSDS stand for?",
+      answer: "Mortgage Servicing Disclosure Statement"
+    },
+    {
+      question: "What does the MSDS tell the borrower?",
+      answer: "The likelihood that their loan may be assigned to another party for servicing in the future"
+    },
+    {
+      question: "What does the NTS stand for?",
+      answer: "Notice of Transfer Statement"
+    },
+    {
+      question: "What are some examples of settlement services?",
+      answer: "Appraisal, pest inspection, survey, credit reporting, title work"
+    },
+    {
+      question: "What is the regulation letter for RESPA?",
+      answer: "Regulation X"
+    },
+    {
+      question: "What regulatory agency regulates RESPA?",
+      answer: "The CFPB"
+    },
+    {
+      question: "What does RESPA not govern?",
+      answer: "Agriculture, Business, Commercial, Temporary, Timeshare, property greater than 25 acres"
+    },
+  ];
+  console.log("RESPA has " + respaQs.length + " questions")
+
+  let tilaQs = [
+    {
+      question: "",
+      answer: ""
+    },
+  ]
+  console.log("TILA has " + tilaQs.length + " questions")
+
+  let ecoaQs = [
+    {
+      question: "",
+      answer: ""
+    },
+  ]
+  console.log("ECOA has " + ecoaQs.length + " questions")
+
+  let fhaQs = [
+    {
+      question: "",
+      answer: ""
+    },
+  ]
+  console.log("FHA has " + fhaQs.length + " questions")
+
+  let disclosureQs = [
+    {
+      question: "",
+      answer: ""
+    },
+  ]
+  console.log("Disclosures has " + disclosureQs.length + " questions")
+
+  // along with on clicks for each one to push to final array when send it is clicked!!!!!!!!!!!!!!!!!!!
+
   
-  // need to create more arrays for each new subtopic along with on clicks for each one to push to final array when send it is clicked!!!!!!!!!!!!!!!!!!!
 
-  let uscLength = uscQs.length
-  console.log("USC has " + uscLength + " questions")
+  
 
-  let fedLawLength = fedlawQs.length
-  console.log("Fed Law has " + fedLawLength + " questions")
+  
+  
 
-  let ethicsLength = ethQs.length
-  console.log("Ethics has " + ethicsLength + " questions")
-
-  let gmkLength = gmkQs.length
-  console.log("GMK has " + gmkLength + " questions")
-
-  let mloLength = mloQs.length
-  console.log("MLO has " + mloLength + " questions")
 
   // navbar dropdown
   $(".dropdown-trigger").dropdown();
