@@ -2,6 +2,6 @@ nav {
     margin-bottom: 38px;
 }
 
-#reload {
-    margin-bottom: 38px;
+.card-action {
+    text-transform: lowercase !important;
 }
