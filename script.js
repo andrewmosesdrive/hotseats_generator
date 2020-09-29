@@ -218,7 +218,7 @@ $(document).ready(() => {
     {
       question: "What constitutes an 'immediate family member'?",
       answer:
-        "Grandparents, parents, siblings, children, and grandchildren (incuding step and adoptive)",
+        "Grandparents, parents, siblings, children, and grandchildren (including step and adoptive)",
     },
     {
       question:
@@ -379,7 +379,7 @@ $(document).ready(() => {
     {
       question:
         "Under MAP (Mortgage Acts and Practices), AKA Reg N, how long must copies of commercial communication be retained?",
-      answer: "Answer",
+      answer: "2 years",
     },
   ];
   console.log("Fed Law has " + fedlawQs.length + " questions");
