@@ -687,13 +687,15 @@ $(document).ready(() => {
     location.reload();
   });
 
-  $("#submit-btn").on("click", () => {
-    M.toast({ html: "Oops! That feature isn't ready yet." });
-  });
+  // ==================================================================
+  // $("#submit-btn").on("click", () => {
+  //   M.toast({ html: "Oops! That feature isn't ready yet. If you'd like to submit a question, send an email over to andrewmoses@quickenloans.com with the question, answer, and section, with an email subject of 'Question Submission'." });
+  // });
 
-  $("#problem-btn").on("click", () => {
-    M.toast({ html: "Oops! That feature isn't ready yet." });
-  });
+  // $("#problem-btn").on("click", () => {
+  //   M.toast({ html: "Oops! That feature isn't ready yet. If you'd like to report a problem or give feedback, send an email over to andrewmoses@quickenloans.com with the subject 'Hotseats Generator Feedback'" });
+  // });
+  // ==================================================================
   
   // array for all questions related to chosen topic to be pushed to
   let questionsArray = [];
@@ -782,11 +784,13 @@ $(document).ready(() => {
       let newQuestion = `
         <div class="row">
           <div class="col s12 m12">
-            <div class="card med blue-grey darken-1">
+            <div class="card med blue-grey darken-1" id="new-cards">
               <div class="card-content white-text">
                 <blockquote>${questionsArray[i].question}</blockquote>
                 </br>
                 <blockquote>${questionsArray[i].answer}</blockquote>
+                <a class="waves-effect waves-light btn-small" id="old-q-btn"
+                ><i class="material-icons right"></i>Hide</a>
               </div> 
             </div>
           </div>
@@ -795,6 +799,22 @@ $(document).ready(() => {
       // console.log(questionsArray[i].question);
       // append questions to page
       $("#new-question").append(newQuestion);
+      
+
+      // arrow function doesn't grab parents the same! also can't use it with methods
+      // ------------------------------------------------------------
+      // place this in literal to grab?
+      // ------------------------------------------------------------
+
+      // build a button into the template
+      // on click, hide or remove
+      $("#old-q-btn").on("click", () => {
+        this.remove()
+      });
+    
+      
     }
+    
   }
+  
 });
