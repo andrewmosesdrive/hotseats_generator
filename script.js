@@ -643,14 +643,6 @@ $(document).ready(() => {
       question: "What is the purpose of the Fair Housing Act?",
       answer: "To prevent discrimination in housing",
     },
-    {
-      question: "",
-      answer: "",
-    },
-    {
-      question: "",
-      answer: "",
-    },
   ];
   console.log("FHA has " + fhaQs.length + " questions");
 
@@ -793,7 +785,7 @@ $(document).ready(() => {
                 <blockquote>${questionsArray[i].question}</blockquote>
                 </br>
                 <blockquote>${questionsArray[i].answer}</blockquote>
-                <a class="waves-effect waves-light btn-small" id="old-q-btn"
+                <a onclick="$(this.parentNode).remove()" class="waves-effect waves-light btn-small" id="old-q-btn"
                 ><i class="material-icons right"></i>Hide</a>
               </div> 
             </div>
