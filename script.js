@@ -1,4 +1,8 @@
 $(document).ready(() => {
+  // modal on doc ready for explanation of use
+  $('.modal').modal();
+  $('.modal').modal('open');
+
   // create array for each set of questions based on type, with of final Array holding question and answer
   let mloQs = [
     {
