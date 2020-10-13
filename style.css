@@ -1,8 +1,11 @@
 nav {
-    margin-bottom: 38px;
+    margin-bottom: 15px;
 }
 
 .card-action {
     text-transform: lowercase !important;
 }
 
+.card-title {
+    padding-bottom: 10px;
+}
