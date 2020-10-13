@@ -1,42 +1,63 @@
 $(document).ready(() => {
   // modal on doc ready for explanation of use
   $('.modal').modal();
-  // $('.modal').modal('open');
+  $('.modal').modal('open');
 
   // create array for each set of questions based on type, with of final Array holding question and answer
   let mloQs = [
     {
+      question: "blank",
+      answer: "blank",
+      difficulty: "week-3",
+      subtopic: "blank"
+
+    },
+    {
       question:
         "On which section of the URLA will I find the government monitoring information?",
       answer: "Title X",
+      difficulty: "week-2",
+      subtopic: "application"
     },
     {
       question:
         "Who is ultimately responsible for the accuracy of the information on the URLA?",
       answer: "The borrower",
+      difficulty: "week-2",
+      subtopic: "application"
     },
     {
       question: "When must the loan estimate be provided to the borrower?",
       answer: "At application or within 3 business days if mailed",
+      difficulty: "week-2",
+      subtopic: "disclosures"
     },
     {
       question:
         "What percent ownership interest must you have in a company to require you to give your borrower an AfBA?",
       answer: "1% or more",
+      difficulty: "week-2",
+      subtopic: "disclosures"
     },
     {
       question:
         "All cash used in a mortgage transaction must be 3 things; what are they?",
       answer: "Traceable, accessible, not a liability",
+      difficulty: "week-1",
+      subtopic: "mlo-timeline"
     },
     {
       question: "What document is specific to self-employed clients?",
       answer: "The 1040",
+      difficulty: "week-1",
+      subtopic: "mlo-timeline"
     },
     {
       question: "What is passive income and what are some examples of it?",
       answer:
         "Money received that is not currently being worked for. Examples include social security, disability, and retirement",
+      difficulty: "week-1",
+      subtopic: "mlo-timeline"
     },
   ];
   console.log("MLO has " + mloQs.length + " questions");
@@ -46,60 +67,87 @@ $(document).ready(() => {
       question:
         "After Fannie and Freddie have purchased loans, the bundling of those loans into mortgage backed securities and the subsequent sale on the secondary market is known as what?",
       answer: "Securitization",
+      difficulty: "week-2",
+      subtopic: "ownership"
+
     },
     {
       question: "What is the automated underwriting system for FHA and VA?",
       answer: "TOTAL (Technology Open to Approved Lenders)",
+      difficulty: "week-2",
+      subtopic: "programs"
     },
     {
       question: "What is the minimum credit score for a conventional loan?",
       answer: "620",
+      difficulty: "week-2",
+      subtopic: "programs"
     },
     {
       question: "What is the minimum credit score for an FHA loan?",
       answer: "500",
+      difficulty: "week-2",
+      subtopic: "programs"
     },
     {
       question:
         "If a client has a credit score of 580 or above on an FHA loan, what is the maximum financing they can receive on a refinance?",
       answer: "97.75%",
+      difficulty: "week-2",
+      subtopic: "programs"
     },
     {
       question: "Who are USDA loans meant for?",
       answer: "People living in rural communities with low to moderate income",
+      difficulty: "week-2",
+      subtopic: "programs"
     },
     {
       question: "Which occupancy type(s) are allowed on FHA loans?",
       answer: "Primary residence only",
+      difficulty: "week-2",
+      subtopic: "programs"
     },
     {
       question:
         "What is Entitlement and how is it different from the Guaranty?",
       answer:
         "Entitlement is the amount a client is entitled to based on their service in the military, while Guaranty is how much the VA will give to the lender to 'close the gap' in the event that a home with a VA loan sells for less than the remaining principle balance after a foreclosure",
+        difficulty: "week-2",
+        subtopic: "programs"
     },
     {
-      question: "What is a mixedArrayumbo loan?",
+      question: "What is a jumbo loan?",
       answer:
-        "A mixedArrayumbo loan is a loan which meets all of the requirements set by Fannie and Freddie, but exceeds the loan limits set by the FHFA",
+        "A jumbo loan is a loan which meets all of the requirements set by Fannie and Freddie, but exceeds the loan limits set by the FHFA",
+        difficulty: "week-2",
+        subtopic: "products"
     },
     {
       question:
         "What percent of the loan amount is the up-front mortgage insurance premium (UFMIP) on FHA loans?",
       answer: "1.75%",
+      difficulty: "week-2",
+      subtopic: "programs"
     },
     {
       question: "What is a 'non-traditional' mortgage?",
       answer: "Anything other than a 30-year fixed",
+      difficulty: "week-2",
+      subtopic: "products"
     },
     {
       question: "What are the DTI requirements for a Conventional loan?",
       answer:
         "28% housing, 36% total (up to 45% total with compensation factors)",
+      difficulty: "week-1",
+      subtopic: "programs"
     },
     {
       question: "What two parts make up the fully indexed rate on an ARM?",
       answer: "The margin and the index",
+      difficulty: "week-1",
+      subtopic: "products"
     },
   ];
   console.log("GMK has " + gmkQs.length + " questions");
@@ -109,16 +157,22 @@ $(document).ready(() => {
       question: "When is property flipping considered unethical?",
       answer:
         "When the home is re-sold for a much higher value that is not reflected by any significant repairs or improvements to the home",
+      difficulty: "week-2",
+      subtopic: "borrower-fraud",
     },
     {
       question: "What is a straw buyer?",
       answer:
         "When a borrower is attempting to qualify while using someone elses credentials/assets/etc",
+      difficulty: "week-2",
+      subtopic: "borrower-fraud"
     },
     {
       question:
         "What is it called when a homeowner is encouraged to refinance their property over and over until little or no equity remains?",
       answer: "Loan flipping",
+      difficulty: "week-3",
+      subtopic: "industry-fraud"
     },
   ];
   console.log("Ethics has " + ethQs.length + " questions");
@@ -127,174 +181,248 @@ $(document).ready(() => {
     {
       question: "What is the NMLS?",
       answer: "A database which houses informations on MLO's",
+      difficulty: "week-2",
+      subtopic: "agencies"
     },
     {
       question: "What federal regulatory authority did Dodd-Frank establish?",
       answer: "CFPB",
+      difficulty: "week-2",
+      subtopic: "agencies"
     },
     {
       question: "What does the CFPB stand for?",
       answer: "Consumer Financial Protection Bureau",
+      difficulty: "week-2",
+      subtopic: "agencies"
     },
     {
       question: "What is an AKA for the CFPB?",
       answer: "The Bureau",
+      difficulty: "week-2",
+      subtopic: "agencies"
     },
     {
       question: "What is the maximum penalty for violations of the SAFE Act?",
       answer: "$29,707",
+      difficulty: "week-2",
+      subtopic: "your-license"
     },
     {
       question: "What is an AKA for the State Authority?",
       answer: "The Commissioner",
+      difficulty: "week-2",
+      subtopic: "agencies"
     },
     {
       question:
         "If a law has a regulation letter such as Regulation B or Z, that law is regulated by whom?",
       answer: "The CFPB",
+      difficulty: "week-2",
+      subtopic: "agencies"
     },
     {
       question: "The FHA is overseen and enforced by which two entities?",
-      answer: "HUD and DOmixedArray",
+      answer: "HUD and DOJ",
+      difficulty: "week-2",
+      subtopic: "agencies"
     },
     {
       question: "What report are MLO's required to submit to the NMLS?",
       answer: "Mortgage Call Report",
+      difficulty: "week-2",
+      subtopic: "your-license"
     },
     {
       question: "What does the SAFE Act stand for and when was it created?",
       answer: "Secure and Fair Enforcement Act, 2008",
+      difficulty: "week-2",
+      subtopic: "your-license"
     },
     {
       question: "What is an AKA for the SAFE Act?",
       answer: "Title V of HERA (Housing and Economic Reform Act)",
+      difficulty: "week-3",
+      subtopic: "your-license"
     },
     {
       question: "Which two organizations created the NMLS?",
       answer:
         "CSBS (Conference of State Bank Supervisors) and AARMR (American Association of Residential Mortgage Regulators)",
+      difficulty: "week-2",
+      subtopic: "agencies"
     },
     {
       question: "What does NMLS stand for?",
       answer: "Nationwide Multistate Licensing System and Registry",
+      difficulty: "week-2",
+      subtopic: "agencies"
     },
     {
       question: "How often must MCR's be submitted to the NMLS?",
       answer: "Quarterly and Annually",
+      difficulty: "week-2",
+      subtopic: "your-license"
     },
     {
       question: "Who assigns a unique identifier to MLO's when they register?",
       answer: "The NMLS",
+      difficulty: "week-2",
+      subtopic: "agencies"
     },
     {
       question:
         "Who can take over the NMLS or create a new database if the NMLS is not fulfilling its' duties?",
       answer: "The CFPB",
+      difficulty: "week-2",
+      subtopic: "agencies"
     },
     {
       question:
         "Who has the authority to issue, suspend, deny, or revoke your license?",
       answer: "The State Authority",
+      difficulty: "week-2",
+      subtopic: "agencies"
     },
     {
       question:
         "If the CFPB or The State Authority wants an MLO to immediately stop and not conduct anymore business, what can they issue?",
       answer: "A cease and desist order",
+      difficulty: "week-2",
+      subtopic: "agencies"
     },
     {
       question:
         "The state sets minimum requirements for each state for which 3 types of funds?",
       answer: "Surety bond, state fund, net worth",
+      difficulty: "week-2",
+      subtopic: "agencies"
     },
     {
       question: "The SAFE Act contains what 2 regulations regarding licensing?",
       answer: "G and H",
+      difficulty: "week-2",
+      subtopic: "your-license"
     },
     {
       question: "When do processors and underwriters need to be licensed?",
       answer: "When operating as an independent contractor",
+      difficulty: "week-2",
+      subtopic: "your-license"
     },
     {
       question:
         "If someone is a volunteer for a non-profit, but they are handling mortgages, are they required to be licensed?",
       answer: "No",
+      difficulty: "week-3",
+      subtopic: "your-license"
     },
     {
       question: "What constitutes an 'immediate family member'?",
       answer:
         "Grandparents, parents, siblings, children, and grandchildren (including step and adoptive)",
+      difficulty: "week-3",
+      subtopic: "your-license"
     },
     {
       question:
         "How many hours of pre-licensing education is required and what is the breakdown of hours spent per topic?",
       answer:
         "20 hours: 3 fed law, 3 ethics, 2 non-traditional mortgage products, and 12 undefined (elective)",
+      difficulty: "week-2",
+      subtopic: "your-license"
     },
     {
       question:
         "What are the 4 MU forms and who is required to fill out each one?",
       answer:
         "MU1 for company, MU2 for control person/responsible party, MU3 for a branch, MU4 for individual MLO's",
+      difficulty: "week-2",
+      subtopic: "your-license"
     },
     {
       question:
         "If an MLO has had a non-financial felony, how long must they wait to get a license?",
       answer: "7 years",
+      difficulty: "week-2",
+      subtopic: "your-license"
     },
     {
       question:
         "If someone has ever had a financial felony (including fraud) how long must they wait to get a license?",
       answer: "They can never be licensed",
+      difficulty: "week-2",
+      subtopic: "your-license"
     },
     {
       question:
         "How many hours of continuous education is required for MLO's and what is the breakdown of hours spent per topic?",
       answer:
         "8 hours: 3 fed law, 2 ethics, 2 non-traditional mortgage products, 1 undefined (elective)",
+      difficulty: "week-2",
+      subtopic: "your-license"
     },
     {
       question: "Why was the NMLS created?",
       answer:
         "To streamline communication and provide transparency by storing information on MLO's",
+      difficulty: "week-2",
+      subtopic: "agencies"
     },
     {
       question: "Who is required to register with the NMLS?",
       answer: "All MLO's regardless of what type of institution they work for",
+      difficulty: "week-2",
+      subtopic: "your-license"
     },
     {
       question:
         "What is the difference between who is regulated by Reg G and Reg H under the SAFE Act?",
       answer:
         "Reg G refers to MLO's who only have to register, and Reg H applies to MLO's who have to both register and be licensed",
+      difficulty: "week-2",
+      subtopic: "your-license"
     },
     {
       question:
         "What additional steps beyond registration do MLO's have to take in order to seek an MLO license?",
       answer:
         "20 hour pre-licensing education, pass the SAFE exam, fingerprinting, credit check, background check, pay NMLS and licensing fees",
+      difficulty: "week-2",
+      subtopic: "your-license"
     },
     {
       question:
         "What is the best definition of an individual who places clients with lenders?",
       answer: "Mortgage broker",
+      difficulty: "week-2",
+      subtopic: "your-license"
     },
     {
       question:
         "Who is the national organization that helps oversee and manage the various functions of the NMLS?",
       answer: "CSBS (Conference of State Bank Supervisors)",
+      difficulty: "week-3",
+      subtopic: "agencies"
     },
     {
       question: "Who operates the NMLS?",
       answer: "The SRR (State Regulatory Registry",
+      difficulty: "week-3",
+      subtopic: "agencies"
     },
     {
       question: "What year was the Dodd-Frank Act created?",
       answer: "2010",
+      difficulty: "week-3",
+      subtopic: "agencies"
     },
     {
       question:
         "What type of penalties can the State Authority or the CFPB levy against an MLO?",
       answer: "Civil penalties",
+      difficulty: "week-2",
+      subtopic: "agencies"
     },
   ];
   console.log("USC has " + uscQs.length + " questions");
@@ -683,22 +811,49 @@ $(document).ready(() => {
     location.reload();
   });
 
-  // ==================================================================
-  // $("#submit-btn").on("click", () => {
-  //   M.toast({ html: "Oops! That feature isn't ready yet. If you'd like to submit a question, send an email over to andrewmoses@quickenloans.com with the question, answer, and section, with an email subject of 'Question Submission'." });
-  // });
-
-  // $("#problem-btn").on("click", () => {
-  //   M.toast({ html: "Oops! That feature isn't ready yet. If you'd like to report a problem or give feedback, send an email over to andrewmoses@quickenloans.com with the subject 'Hotseats Generator Feedback'" });
-  // });
-  // ==================================================================
-  
   // array for all questions related to chosen topic to be pushed to
   let questionsArray = [];
   // console.log(questionsArray);
 
   // when clicked, each chosen topic will push it's questions into questionArray
   $("#run-btn").on("click", () => {
+    // ===========================================================================================
+    // current iteration of a working set of if-statements for checks of both difficulty and topic
+    if ($("input[id='week-1-box']").is(":checked")) {
+      if ($("input[id='mlo-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (mloQs[i].difficulty === "week-1") {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i])
+            questionsArray.push.apply(questionsArray, filteredArray)
+          } 
+        }
+      }
+    } else if ($("input[id='week-2-box']").is(":checked")) {
+      if ($("input[id='mlo-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (mloQs[i].difficulty === "week-2") {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i])
+            questionsArray.push.apply(questionsArray, filteredArray)
+          } 
+        }
+      }
+    } else if ($("input[id='week-3-box']").is(":checked")) {
+      if ($("input[id='mlo-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (mloQs[i].difficulty === "week-3") {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i])
+            questionsArray.push.apply(questionsArray, filteredArray)
+          } 
+        }
+      }
+    } 
+    // ===========================================================================================
+
+
+    // currently existing if statements ==========================================================
     if ($("input[id='fed-law-box']").is(":checked")) {
       //   console.log("fedlaw");
       questionsArray.push.apply(questionsArray, fedlawQs);
@@ -707,10 +862,10 @@ $(document).ready(() => {
       // console.log("ethics");
       questionsArray.push.apply(questionsArray, ethQs);
     }
-    if ($("input[id='mlo-box']").is(":checked")) {
-      // console.log("mlo");
-      questionsArray.push.apply(questionsArray, mloQs);
-    }
+    // if ($("input[id='mlo-box']").is(":checked")) {
+    //   // console.log("mlo");
+    //   questionsArray.push.apply(questionsArray, mloQs);
+    // }
     if ($("input[id='gmk-box']").is(":checked")) {
       // console.log("gmk");
       questionsArray.push.apply(questionsArray, gmkQs);
