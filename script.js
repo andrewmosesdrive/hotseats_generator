@@ -1,6 +1,6 @@
 $(document).ready(() => {
   // modal on doc ready for explanation of use
-  $('.modal').modal();
+  $(".modal").modal();
   // $('.modal').modal('open');
 
   // create array for each set of questions based on type, with of final Array holding question and answer
@@ -9,55 +9,89 @@ $(document).ready(() => {
       question: "blank",
       answer: "blank",
       difficulty: "week-3",
-      subtopic: "blank"
-
+      subtopic: "blank",
     },
     {
       question:
         "On which section of the URLA will I find the government monitoring information?",
       answer: "Title X",
       difficulty: "week-2",
-      subtopic: "application"
+      subtopic: "application",
     },
     {
       question:
         "Who is ultimately responsible for the accuracy of the information on the URLA?",
       answer: "The borrower",
       difficulty: "week-2",
-      subtopic: "application"
+      subtopic: "application",
     },
     {
       question: "When must the loan estimate be provided to the borrower?",
       answer: "At application or within 3 business days if mailed",
       difficulty: "week-2",
-      subtopic: "disclosures"
+      subtopic: "disclosures",
     },
     {
       question:
         "What percent ownership interest must you have in a company to require you to give your borrower an AfBA?",
       answer: "1% or more",
       difficulty: "week-2",
-      subtopic: "disclosures"
+      subtopic: "disclosures",
     },
     {
       question:
         "All cash used in a mortgage transaction must be 3 things; what are they?",
       answer: "Traceable, accessible, not a liability",
       difficulty: "week-1",
-      subtopic: "mlo-timeline"
+      subtopic: "mlo-timeline",
     },
     {
       question: "What document is specific to self-employed clients?",
       answer: "The 1040",
       difficulty: "week-1",
-      subtopic: "mlo-timeline"
+      subtopic: "mlo-timeline",
     },
     {
       question: "What is passive income and what are some examples of it?",
       answer:
         "Money received that is not currently being worked for. Examples include social security, disability, and retirement",
       difficulty: "week-1",
-      subtopic: "mlo-timeline"
+      subtopic: "mlo-timeline",
+    },
+    {
+      question: "What is the difference between the MSDS and the NTS?",
+      answer:
+        "The MSDS tells the borrower the likelihood that their loan servicer may change, while the NTS tells the borrower that the loan servicer is changing/has changed",
+      difficulty: "week-2",
+      subtopic: "disclosures",
+    },
+    {
+      question:
+        "What is an AKA for the 'What You Should Know About Your HELOC' disclosure?",
+      answer: "When Your Home is on the Line",
+      difficulty: "week-3",
+      subtopic: "disclosures",
+    },
+    {
+      question:
+        "On an open-ended loan, which initial disclosure will you receive that gives an estimate of your settlement costs?",
+      answer: "The GFE (Good Faith Estimate)",
+      difficulty: "week-2",
+      subtopic: "disclosures",
+    },
+    {
+      question: "When is Loan Estimate due to the client?",
+      answer: "At application or within 3 business days if mailed",
+      difficulty: "week-2",
+      subtopic: "disclosures",
+    },
+    {
+      question:
+        "How is the Closing Disclosure different from the Loan Estimate?",
+      answer:
+        "The CD includes the final costs of the transaction, the LE includes an estimate",
+      difficulty: "week-1",
+      subtopic: "disclosures",
     },
   ];
   console.log("MLO has " + mloQs.length + " questions");
@@ -68,86 +102,85 @@ $(document).ready(() => {
         "After Fannie and Freddie have purchased loans, the bundling of those loans into mortgage backed securities and the subsequent sale on the secondary market is known as what?",
       answer: "Securitization",
       difficulty: "week-2",
-      subtopic: "ownership"
-
+      subtopic: "ownership",
     },
     {
       question: "What is the automated underwriting system for FHA and VA?",
       answer: "TOTAL (Technology Open to Approved Lenders)",
       difficulty: "week-2",
-      subtopic: "programs"
+      subtopic: "programs",
     },
     {
       question: "What is the minimum credit score for a conventional loan?",
       answer: "620",
       difficulty: "week-2",
-      subtopic: "programs"
+      subtopic: "programs",
     },
     {
       question: "What is the minimum credit score for an FHA loan?",
       answer: "500",
       difficulty: "week-2",
-      subtopic: "programs"
+      subtopic: "programs",
     },
     {
       question:
         "If a client has a credit score of 580 or above on an FHA loan, what is the maximum financing they can receive on a refinance?",
       answer: "97.75%",
       difficulty: "week-2",
-      subtopic: "programs"
+      subtopic: "programs",
     },
     {
       question: "Who are USDA loans meant for?",
       answer: "People living in rural communities with low to moderate income",
       difficulty: "week-2",
-      subtopic: "programs"
+      subtopic: "programs",
     },
     {
       question: "Which occupancy type(s) are allowed on FHA loans?",
       answer: "Primary residence only",
       difficulty: "week-2",
-      subtopic: "programs"
+      subtopic: "programs",
     },
     {
       question:
         "What is Entitlement and how is it different from the Guaranty?",
       answer:
         "Entitlement is the amount a client is entitled to based on their service in the military, while Guaranty is how much the VA will give to the lender to 'close the gap' in the event that a home with a VA loan sells for less than the remaining principle balance after a foreclosure",
-        difficulty: "week-2",
-        subtopic: "programs"
+      difficulty: "week-2",
+      subtopic: "programs",
     },
     {
       question: "What is a jumbo loan?",
       answer:
         "A jumbo loan is a loan which meets all of the requirements set by Fannie and Freddie, but exceeds the loan limits set by the FHFA",
-        difficulty: "week-2",
-        subtopic: "products"
+      difficulty: "week-2",
+      subtopic: "products",
     },
     {
       question:
         "What percent of the loan amount is the up-front mortgage insurance premium (UFMIP) on FHA loans?",
       answer: "1.75%",
       difficulty: "week-2",
-      subtopic: "programs"
+      subtopic: "programs",
     },
     {
       question: "What is a 'non-traditional' mortgage?",
       answer: "Anything other than a 30-year fixed",
       difficulty: "week-2",
-      subtopic: "products"
+      subtopic: "products",
     },
     {
       question: "What are the DTI requirements for a Conventional loan?",
       answer:
         "28% housing, 36% total (up to 45% total with compensation factors)",
       difficulty: "week-1",
-      subtopic: "programs"
+      subtopic: "programs",
     },
     {
       question: "What two parts make up the fully indexed rate on an ARM?",
       answer: "The margin and the index",
       difficulty: "week-1",
-      subtopic: "products"
+      subtopic: "products",
     },
   ];
   console.log("GMK has " + gmkQs.length + " questions");
@@ -165,14 +198,14 @@ $(document).ready(() => {
       answer:
         "When a borrower is attempting to qualify while using someone elses credentials/assets/etc",
       difficulty: "week-2",
-      subtopic: "borrower-fraud"
+      subtopic: "borrower-fraud",
     },
     {
       question:
         "What is it called when a homeowner is encouraged to refinance their property over and over until little or no equity remains?",
       answer: "Loan flipping",
       difficulty: "week-3",
-      subtopic: "industry-fraud"
+      subtopic: "industry-fraud",
     },
   ];
   console.log("Ethics has " + ethicsQs.length + " questions");
@@ -182,147 +215,147 @@ $(document).ready(() => {
       question: "What is the NMLS?",
       answer: "A database which houses informations on MLO's",
       difficulty: "week-2",
-      subtopic: "agencies"
+      subtopic: "agencies",
     },
     {
       question: "What federal regulatory authority did Dodd-Frank establish?",
       answer: "CFPB",
       difficulty: "week-2",
-      subtopic: "agencies"
+      subtopic: "agencies",
     },
     {
       question: "What does the CFPB stand for?",
       answer: "Consumer Financial Protection Bureau",
       difficulty: "week-2",
-      subtopic: "agencies"
+      subtopic: "agencies",
     },
     {
       question: "What is an AKA for the CFPB?",
       answer: "The Bureau",
       difficulty: "week-2",
-      subtopic: "agencies"
+      subtopic: "agencies",
     },
     {
       question: "What is the maximum penalty for violations of the SAFE Act?",
       answer: "$29,707",
       difficulty: "week-2",
-      subtopic: "your-license"
+      subtopic: "your-license",
     },
     {
       question: "What is an AKA for the State Authority?",
       answer: "The Commissioner",
       difficulty: "week-2",
-      subtopic: "agencies"
+      subtopic: "agencies",
     },
     {
       question:
         "If a law has a regulation letter such as Regulation B or Z, that law is regulated by whom?",
       answer: "The CFPB",
       difficulty: "week-2",
-      subtopic: "agencies"
+      subtopic: "agencies",
     },
     {
       question: "The FHA is overseen and enforced by which two entities?",
       answer: "HUD and DOJ",
       difficulty: "week-2",
-      subtopic: "agencies"
+      subtopic: "agencies",
     },
     {
       question: "What report are MLO's required to submit to the NMLS?",
       answer: "Mortgage Call Report",
       difficulty: "week-2",
-      subtopic: "your-license"
+      subtopic: "your-license",
     },
     {
       question: "What does the SAFE Act stand for and when was it created?",
       answer: "Secure and Fair Enforcement Act, 2008",
       difficulty: "week-2",
-      subtopic: "your-license"
+      subtopic: "your-license",
     },
     {
       question: "What is an AKA for the SAFE Act?",
       answer: "Title V of HERA (Housing and Economic Reform Act)",
       difficulty: "week-3",
-      subtopic: "your-license"
+      subtopic: "your-license",
     },
     {
       question: "Which two organizations created the NMLS?",
       answer:
         "CSBS (Conference of State Bank Supervisors) and AARMR (American Association of Residential Mortgage Regulators)",
       difficulty: "week-2",
-      subtopic: "agencies"
+      subtopic: "agencies",
     },
     {
       question: "What does NMLS stand for?",
       answer: "Nationwide Multistate Licensing System and Registry",
       difficulty: "week-2",
-      subtopic: "agencies"
+      subtopic: "agencies",
     },
     {
       question: "How often must MCR's be submitted to the NMLS?",
       answer: "Quarterly and Annually",
       difficulty: "week-2",
-      subtopic: "your-license"
+      subtopic: "your-license",
     },
     {
       question: "Who assigns a unique identifier to MLO's when they register?",
       answer: "The NMLS",
       difficulty: "week-2",
-      subtopic: "agencies"
+      subtopic: "agencies",
     },
     {
       question:
         "Who can take over the NMLS or create a new database if the NMLS is not fulfilling its' duties?",
       answer: "The CFPB",
       difficulty: "week-2",
-      subtopic: "agencies"
+      subtopic: "agencies",
     },
     {
       question:
         "Who has the authority to issue, suspend, deny, or revoke your license?",
       answer: "The State Authority",
       difficulty: "week-2",
-      subtopic: "agencies"
+      subtopic: "agencies",
     },
     {
       question:
         "If the CFPB or The State Authority wants an MLO to immediately stop and not conduct anymore business, what can they issue?",
       answer: "A cease and desist order",
       difficulty: "week-2",
-      subtopic: "agencies"
+      subtopic: "agencies",
     },
     {
       question:
         "The state sets minimum requirements for each state for which 3 types of funds?",
       answer: "Surety bond, state fund, net worth",
       difficulty: "week-2",
-      subtopic: "agencies"
+      subtopic: "agencies",
     },
     {
       question: "The SAFE Act contains what 2 regulations regarding licensing?",
       answer: "G and H",
       difficulty: "week-2",
-      subtopic: "your-license"
+      subtopic: "your-license",
     },
     {
       question: "When do processors and underwriters need to be licensed?",
       answer: "When operating as an independent contractor",
       difficulty: "week-2",
-      subtopic: "your-license"
+      subtopic: "your-license",
     },
     {
       question:
         "If someone is a volunteer for a non-profit, but they are handling mortgages, are they required to be licensed?",
       answer: "No",
       difficulty: "week-3",
-      subtopic: "your-license"
+      subtopic: "your-license",
     },
     {
       question: "What constitutes an 'immediate family member'?",
       answer:
         "Grandparents, parents, siblings, children, and grandchildren (including step and adoptive)",
       difficulty: "week-3",
-      subtopic: "your-license"
+      subtopic: "your-license",
     },
     {
       question:
@@ -330,7 +363,7 @@ $(document).ready(() => {
       answer:
         "20 hours: 3 fed law, 3 ethics, 2 non-traditional mortgage products, and 12 undefined (elective)",
       difficulty: "week-2",
-      subtopic: "your-license"
+      subtopic: "your-license",
     },
     {
       question:
@@ -338,21 +371,21 @@ $(document).ready(() => {
       answer:
         "MU1 for company, MU2 for control person/responsible party, MU3 for a branch, MU4 for individual MLO's",
       difficulty: "week-2",
-      subtopic: "your-license"
+      subtopic: "your-license",
     },
     {
       question:
         "If an MLO has had a non-financial felony, how long must they wait to get a license?",
       answer: "7 years",
       difficulty: "week-2",
-      subtopic: "your-license"
+      subtopic: "your-license",
     },
     {
       question:
         "If someone has ever had a financial felony (including fraud) how long must they wait to get a license?",
       answer: "They can never be licensed",
       difficulty: "week-2",
-      subtopic: "your-license"
+      subtopic: "your-license",
     },
     {
       question:
@@ -360,20 +393,20 @@ $(document).ready(() => {
       answer:
         "8 hours: 3 fed law, 2 ethics, 2 non-traditional mortgage products, 1 undefined (elective)",
       difficulty: "week-2",
-      subtopic: "your-license"
+      subtopic: "your-license",
     },
     {
       question: "Why was the NMLS created?",
       answer:
         "To streamline communication and provide transparency by storing information on MLO's",
       difficulty: "week-2",
-      subtopic: "agencies"
+      subtopic: "agencies",
     },
     {
       question: "Who is required to register with the NMLS?",
       answer: "All MLO's regardless of what type of institution they work for",
       difficulty: "week-2",
-      subtopic: "your-license"
+      subtopic: "your-license",
     },
     {
       question:
@@ -381,7 +414,7 @@ $(document).ready(() => {
       answer:
         "Reg G refers to MLO's who only have to register, and Reg H applies to MLO's who have to both register and be licensed",
       difficulty: "week-2",
-      subtopic: "your-license"
+      subtopic: "your-license",
     },
     {
       question:
@@ -389,419 +422,515 @@ $(document).ready(() => {
       answer:
         "20 hour pre-licensing education, pass the SAFE exam, fingerprinting, credit check, background check, pay NMLS and licensing fees",
       difficulty: "week-2",
-      subtopic: "your-license"
+      subtopic: "your-license",
     },
     {
       question:
         "What is the best definition of an individual who places clients with lenders?",
       answer: "Mortgage broker",
       difficulty: "week-2",
-      subtopic: "your-license"
+      subtopic: "your-license",
     },
     {
       question:
         "Who is the national organization that helps oversee and manage the various functions of the NMLS?",
       answer: "CSBS (Conference of State Bank Supervisors)",
       difficulty: "week-3",
-      subtopic: "agencies"
+      subtopic: "agencies",
     },
     {
       question: "Who operates the NMLS?",
       answer: "The SRR (State Regulatory Registry",
       difficulty: "week-3",
-      subtopic: "agencies"
+      subtopic: "agencies",
     },
     {
       question: "What year was the Dodd-Frank Act created?",
       answer: "2010",
       difficulty: "week-3",
-      subtopic: "agencies"
+      subtopic: "agencies",
     },
     {
       question:
         "What type of penalties can the State Authority or the CFPB levy against an MLO?",
       answer: "Civil penalties",
       difficulty: "week-2",
-      subtopic: "agencies"
+      subtopic: "agencies",
     },
   ];
   console.log("USC has " + uscQs.length + " questions");
 
   let fedlawQs = [
     {
-      question: "What are the three acts that make up the Do Not Call Laws?",
-      answer:
-        "TCPA (Telephone Consumer Protection Act), DNCIA (Do Not Call Implementation Act), and the DNCIA (Do Not Call Improvement Act",
-    },
-    {
-      question:
-        "The Gramm-Leach-Bliley Act specifies that a consumer must be given what amount of time to opt-out before personal financial information is disclosed to a third party?",
-      answer: "A reasonable opportunity",
-    },
-    {
-      question:
-        "Some federal laws require some type of prevention or compliance program, why are these programs important?",
-      answer:
-        "These programs help MLO's detect money laundering, fraud, and pre-texting (phishing) schemes so we can better protect clients",
-    },
-    {
-      question: "What is the primary goal of the Red Flags Rule?",
-      answer: "To detect patterns and practices of identity theft",
-    },
-    {
-      question:
-        "Which federal law ensures that CRA's and creditors are reporting consumer information with accuracy and fairness?",
-      answer:
-        "FCRA/FACTA (Fair Credit Reporting Act/Fair and Accurate Credit Transactions Act)",
-    },
-    {
-      question:
-        "What rule under FACTA (Fair and Accurate Credit Transactions Act) requires businesses to implement an identity theft prevention program into their daily activites?",
-      answer: "Red Flags Rule",
-    },
-    {
-      question:
-        "Which law places limitations and restrictions on lenders regarding the use of non-public personal information?",
-      answer: "The Gramm-Leach-Bliley Act",
-    },
-    {
-      question:
-        "Under FACTA (Fair and Accurate Credit Transactions Act), all derogatory credit information must be reported on a consumers report for no longer than how many years?",
-      answer: "7 years",
-    },
-    {
-      question:
-        "CRA's must place a one-call fraud alert on a consumer's credit report if the consumer claims a suspicion that they are or will be a victim of identity theft. This fraud alert must be filed in the consumer's credit report for a period of no less than how many months?",
-      answer: "12 months",
-    },
-    {
-      question:
-        "Action can be taken against a mortgage professional or institution for 2 years after the date of discovery of the FCRA or FACTA violation, and must be taken within how many years of violation?",
-      answer: "5 years",
-    },
-    {
-      question: "GLBA (Gramm-Leach-Bliley Act) is regulated by whom?",
-      answer: "The FTC",
-    },
-    {
-      question: "Regulation P, which was added to GLBA, is regulated by whom?",
-      answer: "The CFPB",
-    },
-    {
-      question: "What is phishing/pre-texting?",
-      answer:
-        "The act of obtaining an individual's non-public personal information through false pretenses (without authorization)",
-    },
-    {
-      question:
-        "According to the TCPA (Telephone Consumer Protection Act), telephone solicitation may only occur between what hours and in which time zone?",
-      answer: "8am-9pm in the consumer's time zone",
-    },
-    {
-      question:
-        "Which two government entities regulate the Do Not Call Laws, and what is their scope, respectively?",
-      answer:
-        "FTC (Federal Trade Commission) and FCC (Federal Communications Commission); FTC is interstate only, and FCC is interstate and intrastate",
-    },
-    {
-      question: "Wo is the regulatory authority for the E-SIGN Act?",
-      answer:
-        "It depends on which law the disclosure being signed falls under (ex. TILA disclosure = CFPB)",
-    },
-    {
-      question:
-        "Under MAP (Mortgage Acts and Practices), AKA Reg N, how long must copies of commercial communication be retained?",
-      answer: "2 years",
-    },
-  ];
-  console.log("Fed Law has " + fedlawQs.length + " questions");
-
-  let respaQs = [
-    {
-      question: "What type of mortgage loans does RESPA govern?",
-      answer: "Mortgage loans secured by residential property",
-    },
-    {
-      question: "What is a traditional mortgage?",
-      answer: "A 30-year fixed",
-    },
-    {
-      question: "What does RESPA stand for?",
-      answer: "Real Estate Settlement Procedures Act",
-    },
-    {
-      question: "What is the purpose of RESPA?",
-      answer:
-        "Ensure consumers can make informed decisions about real estate transactions by providing transparency into the costs of settlement",
-    },
-    {
-      question: "What is a settlement service?",
-      answer:
-        "Any service provided in connection with the real estate transaction, specifically third party services",
-    },
-    {
-      question: "What is loss mitigation?",
-      answer:
-        "An agreement between the borrower and servicer to make the loan more affordable by changing the terms (modification, forbearance, debt forgiveness)",
-    },
-    {
-      question: "What is the purpose of section 6 of RESPA?",
-      answer: "It sets general rules for Servicers with 4 main obmixedArrayectives",
-    },
-    {
-      question: "What is the purpose of section 8 of RESPA?",
-      answer: "It sets rules about referrals, referral fees, and kickbacks",
-    },
-    {
-      question: "What is the purpose of section 9 of RESPA?",
-      answer: "To provide clients the right to choose their own title agent",
-    },
-    {
-      question: "What is the purpose of section 10 of RESPA?",
-      answer: "To ensure escrow accounts are handled correctly and ethically",
-    },
-    {
-      question: "Which section of RESPA does the MSDS fall under?",
-      answer: "Section 6",
-    },
-    {
-      question: "What does the MSDS stand for?",
-      answer: "Mortgage Servicing Disclosure Statement",
-    },
-    {
-      question: "What does the MSDS tell the borrower?",
-      answer:
-        "The likelihood that their loan may be assigned to another party for servicing in the future",
-    },
-    {
-      question: "What does the NTS stand for?",
-      answer: "Notice of Transfer Statement",
-    },
-    {
-      question: "What are some examples of settlement services?",
-      answer:
-        "Appraisal, pest inspection, survey, credit reporting, title work",
-    },
-    {
-      question: "What is the regulation letter for RESPA?",
-      answer: "Regulation X",
-    },
-    {
-      question: "What regulatory agency regulates RESPA?",
-      answer: "The CFPB",
-    },
-    {
-      question: "What does RESPA not govern?",
-      answer:
-        "Agriculture, Business, Commercial, TemporaryArray, Timeshare, property greater than 25 acres",
-    },
-  ];
-  console.log("RESPA has " + respaQs.length + " questions");
-
-  let tilaQs = [
-    {
       question: "What does TILA stand for and what regulation letter is it?",
       answer: "Truth in Lending Act, Reg Z",
+      difficulty: "week-2",
+      subtopic: "tila"
     },
     {
       question: "Who does TILA govern?",
       answer: "People or organizations who regularly extend credit",
+      difficulty: "week-2",
+      subtopic: "tila"
     },
     {
       question: "What kinds of costs does TILA govern?",
       answer: "Finance charges",
+      difficulty: "week-2",
+      subtopic: "tila"
     },
     {
       question: "What is a finance charge?",
       answer: "Costs/fees associated with obtaining the loan",
+      difficulty: "week-2",
+      subtopic: "tila"
     },
     {
       question: "What is a trigger term?",
       answer:
         "Loan elements that require additional information to understand actual costs",
+      difficulty: "week-2",
+      subtopic: "tila"
     },
     {
       question: "What does TILA says advertisements must be?",
       answer: "Clear and conspicuous",
+      difficulty: "week-2",
+      subtopic: "tila"
     },
     {
       question: "What is section 19 of TILA?",
       answer: "MDIA (Mortgage Disclosure Improvement Act",
+      difficulty: "week-2",
+      subtopic: "tila"
     },
     {
       question:
-        "Per TILA, what is the APR tolerance for admixedArrayustable rate mortgages?",
+        "Per TILA, what is the APR tolerance for adjustable rate mortgages?",
       answer: ".25%",
+      difficulty: "week-2",
+      subtopic: "tila"
     },
     {
       question:
         "What does MDIA require from the borrower before charging non-refundable fees?",
       answer: "Intent to proceed",
+      difficulty: "week-2",
+      subtopic: "tila"
     },
     {
       question:
         "Per TILA when is the soonest the borrower can close upon receiving their initial disclosures?",
       answer: "7 business days",
+      difficulty: "week-2",
+      subtopic: "tila"
     },
     {
       question:
         "What section of TILA requires the delivery of the Note of Right to Cancel?",
       answer: "Section 23",
+      difficulty: "week-2",
+      subtopic: "tila"
     },
     {
       question: "What is another name for a high cost loan under TILA?",
       answer: "A covered loan (AKA HOEPA loan)",
+      difficulty: "week-2",
+      subtopic: "tila"
     },
     {
       question: "What does TILA's Valuation Independence rule say?",
       answer:
         "Appraisers must be unbiased in determining value of property and act independently from any outside influence or coercion",
+      difficulty: "week-2",
+      subtopic: "tila"
     },
     {
       question:
         "Loans that meet QM standards provide more certainty in the secondary market for whom?",
       answer: "Investors",
+      difficulty: "week-2",
+      subtopic: "tila"
     },
     {
       question:
         "What disclosure required by TILA informs borrowers of estimated costs for their closed-end mortgage loan?",
       answer: "The loan estimate",
+      difficulty: "week-2",
+      subtopic: "tila"
     },
     {
       question: "What section of TILA has rules about MLO compensation?",
       answer: "Section 36",
+      difficulty: "week-2",
+      subtopic: "tila"
     },
     {
       question: "What types of loans does the right to rescind apply to?",
       answer:
         "Refinances on primary residences, reverse mortgages, HELOCs, and HELs",
+      difficulty: "week-2",
+      subtopic: "tila"
     },
     {
       question: "What section of TILA includes the Covered Loan Notice?",
       answer: "Section 32",
+      difficulty: "week-2",
+      subtopic: "tila"
     },
-  ];
-  console.log("TILA has " + tilaQs.length + " questions");
-
-  let ecoaQs = [
+    {
+      question: "What is the purpose of the Fair Housing Act?",
+      answer: "To prevent discrimination in housing",
+      difficult: "week-2",
+      subtopic: "fairness-laws"
+    },
     {
       question: "What is the regulation letter for ECOA?",
       answer: "Reg B",
+      difficulty: "week-2",
+      subtopic: "ecoa"
     },
     {
       question: "What does ECOA stand for?",
       answer: "Equal Credit Opportunity Act",
+      difficulty: "week-2",
+      subtopic: "ecoa"
     },
     {
       question: "What is the purpose of ECOA?",
       answer:
         "To ensure that all people have the right to apply for an obtain credit",
+      difficulty: "week-2",
+      subtopic: "ecoa"
     },
     {
       question:
         "What section of the URLA helps ensure MLO's are following the guidelines of ECOA?",
       answer: "Title X - Government monitoring information",
+      difficulty: "week-3",
+      subtopic: "ecoa"
     },
     {
       question:
         "When is it okay to inquire about race, ethnicity, gender, immigration status, marital status, or age?",
       answer: "To determine if the borrower is eligible for special programs",
+      difficulty: "week-3",
+      subtopic: "ecoa"
     },
     {
       question:
         "What is an example of a time that it is okay to discriminate based on age?",
       answer:
         "Reverse mortgage (62 or older), and at least 18 to obtain a mortgage",
+      difficulty: "week-3",
+      subtopic: "ecoa"
     },
     {
       question: "What is disparate treatment?",
       answer:
         "Credit discrimination demonstrated when a lender treats an applicant or borrower differently based on one or more of ECOA's prohibited factors",
+      difficulty: "week-2",
+      subtopic: "ecoa"
     },
     {
       question:
         "What disclosure goes out once a decision is made in determining the borrowers application status?",
       answer: "Notice of Action Taken",
+      difficulty: "week-3",
+      subtopic: "ecoa"
     },
     {
       question: "What does ECOA's Valuation Rule say?",
       answer:
         "A copy of the appraisal must be provided to the borrower as soon as the MLO is done processing the report",
+      difficulty: "week-2",
+      subtopic: "ecoa"
     },
     {
       question:
         "What is another name for the Notice of Action Taken in the case of a credit denial?",
       answer: "Adverse Action (Notice of Credit Denied)",
+      difficulty: "week-2",
+      subtopic: "ecoa"
     },
     {
       question: "What act was ECOA added to?",
       answer: "CCPA (Consumer Credit Protection Act)",
+      difficulty: "week-3",
+      subtopic: "ecoa"
     },
     {
       question:
         "What is referred to as seemingly legal or neutral behavior which has a negative impact on a group of people?",
       answer: "Disparate impact",
+      difficulty: "week-2",
+      subtopic: "ecoa"
     },
     {
       question:
         "What are examples of factors that ECOA prohibits basing credit decisions upon?",
       answer:
         "Race, color, religion, national origin, gender, marital status, age (keep in mind disability and familial status, which are not listed)",
+      difficulty: "week-2",
+      subtopic: "ecoa"
     },
     {
       question:
         "What form of discriminatory behavior occurs when the discrimination is blatantly obvious?",
       answer: "Overt evidence",
+      difficulty: "week-2",
+      subtopic: "ecoa"
     },
     {
       question:
         "How long does ECOA require the Notice of Credit Denied be retained",
       answer: "25 months",
+      difficulty: "week-3",
+      subtopic: "ecoa"
     },
     {
       question:
         "Who is ultimately responsible for the accuracy of information on the application in the eyes of the low?",
       answer: "The borrower",
+      difficulty: "week-2",
+      subtopic: "ecoa"
     },
-  ];
-  console.log("ECOA has " + ecoaQs.length + " questions");
-
-  let fhaQs = [
     {
-      question: "What is the purpose of the Fair Housing Act?",
-      answer: "To prevent discrimination in housing",
-    },
-  ];
-  console.log("FHA has " + fhaQs.length + " questions");
-
-  let disclosureQs = [
-    {
-      question: "What is the difference between the MSDS and the NTS?",
+      question: "What are the three acts that make up the Do Not Call Laws?",
       answer:
-        "The MSDS tells the borrower the likelihood that their loan servicer may change, while the NTS tells the borrower that the loan servicer is changing/has changed",
+        "TCPA (Telephone Consumer Protection Act), DNCIA (Do Not Call Implementation Act), and the DNCIA (Do Not Call Improvement Act",
+      difficulty: "week-3",
+      subtopic: "consumer-contact-laws"
     },
     {
       question:
-        "What is an AKA for the 'What You Should Know About Your HELOC' disclosure?",
-      answer: "When Your Home is on the Line",
+        "The Gramm-Leach-Bliley Act specifies that a consumer must be given what amount of time to opt-out before personal financial information is disclosed to a third party?",
+      answer: "A reasonable opportunity",
+      difficulty: "week-3",
+      subtopic: "consumer-contact-laws"
     },
     {
       question:
-        "On an open-ended loan, which initial disclosure will you receive that gives an estimate of your settlement costs?",
-      answer: "The GFE (Good Faith Estimate)",
-    },
-    {
-      question: "When is Loan Estimate due to the client?",
-      answer: "At application or within 3 business days if mailed",
-    },
-    {
-      question:
-        "How is the Closing Disclosure different from the Loan Estimate?",
+        "Some federal laws require some type of prevention or compliance program, why are these programs important?",
       answer:
-        "The CD includes the final costs of the transaction, the LE includes an estimate",
+        "These programs help MLO's detect money laundering, fraud, and pre-texting (phishing) schemes so we can better protect clients",
+      difficulty: "week-3",
+      subtopic: "financial-crimes-laws"
+    },
+    {
+      question: "What is the primary goal of the Red Flags Rule?",
+      answer: "To detect patterns and practices of identity theft",
+      difficulty: "week-2",
+      subtopic: "consumer-contact-laws"
+    },
+    {
+      question:
+        "Which federal law ensures that CRA's and creditors are reporting consumer information with accuracy and fairness?",
+      answer:
+        "FCRA/FACTA (Fair Credit Reporting Act/Fair and Accurate Credit Transactions Act)",
+      difficulty: "week-2",
+      subtopic: "consumer-contact-laws"
+    },
+    {
+      question:
+        "What rule under FACTA (Fair and Accurate Credit Transactions Act) requires businesses to implement an identity theft prevention program into their daily activites?",
+      answer: "Red Flags Rule",
+      difficulty: "week-2",
+      subtopic: "consumer-contact-laws"
+    },
+    {
+      question:
+        "Which law places limitations and restrictions on lenders regarding the use of non-public personal information?",
+      answer: "The Gramm-Leach-Bliley Act",
+      difficulty: "week-2",
+      subtopic: "consumer-contact-laws"
+    },
+    {
+      question:
+        "Under FACTA (Fair and Accurate Credit Transactions Act), all derogatory credit information must be reported on a consumers report for no longer than how many years?",
+      answer: "7 years",
+      difficulty: "week-2",
+      subtopic: "consumer-contact-laws"
+    },
+    {
+      question:
+        "CRA's must place a one-call fraud alert on a consumer's credit report if the consumer claims a suspicion that they are or will be a victim of identity theft. This fraud alert must be filed in the consumer's credit report for a period of no less than how many months?",
+      answer: "12 months",
+      difficulty: "week-3",
+      subtopic: "consumer-contact-laws"
+    },
+    {
+      question:
+        "Action can be taken against a mortgage professional or institution for 2 years after the date of discovery of the FCRA or FACTA violation, and must be taken within how many years of violation?",
+      answer: "5 years",
+      difficulty: "week-3",
+      subtopic: "consumer-contact laws"
+    },
+    {
+      question: "GLBA (Gramm-Leach-Bliley Act) is regulated by whom?",
+      answer: "The FTC",
+      difficulty: "week-2",
+      subtopic: "consumer-contact-laws"
+    },
+    {
+      question: "Regulation P, which was added to GLBA, is regulated by whom?",
+      answer: "The CFPB",
+      difficulty: "week-2",
+      subtopic: "consumer-contact-laws"
+    },
+    {
+      question: "What is phishing/pre-texting?",
+      answer:
+        "The act of obtaining an individual's non-public personal information through false pretenses (without authorization)",
+      difficulty: "week-2",
+      subtopic: "consumer-contact-laws"
+    },
+    {
+      question:
+        "According to the TCPA (Telephone Consumer Protection Act), telephone solicitation may only occur between what hours and in which time zone?",
+      answer: "8am-9pm in the consumer's time zone",
+      difficulty: "week-2",
+      subtopic: "consumer-contact-laws"
+    },
+    {
+      question:
+        "Which two government entities regulate the Do Not Call Laws, and what is their scope, respectively?",
+      answer:
+        "FTC (Federal Trade Commission) and FCC (Federal Communications Commission); FTC is interstate only, and FCC is interstate and intrastate",
+      difficulty: "week-3",
+      subtopic: "consumer-contact-laws"
+    },
+    {
+      question: "Who is the regulatory authority for the E-SIGN Act?",
+      answer:
+        "It depends on which law the disclosure being signed falls under (ex. TILA disclosure = CFPB)",
+      difficulty: "week-3",
+      subtopic: "consumer-contact-laws"
+    },
+    {
+      question:
+        "Under MAP (Mortgage Acts and Practices), AKA Reg N, how long must copies of commercial communication be retained?",
+      answer: "2 years",
+      difficulty: "week-3",
+      subtopic: "consumer-contact-laws"
+    },
+    {
+      question: "What type of mortgage loans does RESPA govern?",
+      answer: "Mortgage loans secured by residential property",
+      difficulty: "week-2",
+      subtopic: "respa"
+    },
+    {
+      question: "What is a traditional mortgage?",
+      answer: "A 30-year fixed",
+      difficulty: "week-2",
+      subtopic: "respa"
+    },
+    {
+      question: "What does RESPA stand for?",
+      answer: "Real Estate Settlement Procedures Act",
+      difficulty: "week-2",
+      subtopic: "respa"
+    },
+    {
+      question: "What is the purpose of RESPA?",
+      answer:
+        "Ensure consumers can make informed decisions about real estate transactions by providing transparency into the costs of settlement",
+      difficulty: "week-2",
+      subtopic: "respa"
+    },
+    {
+      question: "What is a settlement service?",
+      answer:
+        "Any service provided in connection with the real estate transaction, specifically third party services",
+      difficulty: "week-2",
+      subtopic: "respa"
+    },
+    {
+      question: "What is loss mitigation?",
+      answer:
+        "An agreement between the borrower and servicer to make the loan more affordable by changing the terms (modification, forbearance, debt forgiveness)",
+      difficulty: "week-2",
+      subtopic: "respa"
+    },
+    {
+      question: "What is the purpose of section 6 of RESPA?",
+      answer:
+        "It sets general rules for Servicers with 4 main objectives",
+      difficulty: "week-2",
+      subtopic: "respa"
+    },
+    {
+      question: "What is the purpose of section 8 of RESPA?",
+      answer: "It sets rules about referrals, referral fees, and kickbacks",
+      difficulty: "week-2",
+      subtopic: "respa"
+    },
+    {
+      question: "What is the purpose of section 9 of RESPA?",
+      answer: "To provide clients the right to choose their own title agent",
+      difficulty: "week-2",
+      subtopic: "respa"
+    },
+    {
+      question: "What is the purpose of section 10 of RESPA?",
+      answer: "To ensure escrow accounts are handled correctly and ethically",
+      difficulty: "week-2",
+      subtopic: "respa"
+    },
+    {
+      question: "Which section of RESPA does the MSDS fall under?",
+      answer: "Section 6",
+      difficulty: "week-2",
+      subtopic: "respa"
+    },
+    {
+      question: "What does the MSDS stand for?",
+      answer: "Mortgage Servicing Disclosure Statement",
+      difficulty: "week-2",
+      subtopic: "respa"
+    },
+    {
+      question: "What does the MSDS tell the borrower?",
+      answer:
+        "The likelihood that their loan may be assigned to another party for servicing in the future",
+      difficulty: "week-2",
+      subtopic: "respa"
+    },
+    {
+      question: "What does the NTS stand for?",
+      answer: "Notice of Transfer Statement",
+      difficulty: "week-2",
+      subtopic: "respa"
+    },
+    {
+      question: "What are some examples of settlement services?",
+      answer:
+        "Appraisal, pest inspection, survey, credit reporting, title work",
+      difficulty: "week-2",
+      subtopic: "respa"
+    },
+    {
+      question: "What is the regulation letter for RESPA?",
+      answer: "Regulation X",
+      difficulty: "week-2",
+      subtopic: "respa"
+    },
+    {
+      question: "What regulatory agency regulates RESPA?",
+      answer: "The CFPB",
+      difficulty: "week-2",
+      subtopic: "respa"
+    },
+    {
+      question: "What does RESPA not govern?",
+      answer:
+        "Agriculture, Business, Commercial, Temporary, Timeshare, property greater than 25 acres",
+      difficulty: "week-3",
+      subtopic: "respa"
     },
   ];
-  console.log("Disclosures has " + disclosureQs.length + " questions");
+  console.log("Fed Law has " + fedlawQs.length + " questions");
 
   // navbar dropdown
   $(".dropdown-trigger").dropdown();
@@ -817,10 +946,9 @@ $(document).ready(() => {
 
   // when clicked, each chosen topic will push it's questions into questionArray
   $("#run-btn").on("click", () => {
-
     // current iteration of working set of if-statements for checks of both difficulty and topic
     // ===========================================================================================
-    
+
     // week 1 difficulty level block -------------------------------------------------------------
     if ($("input[id='week-1-box']").is(":checked")) {
       // main topic MLO
@@ -828,29 +956,59 @@ $(document).ready(() => {
         for (let i = 0; i < mloQs.length; i++) {
           if (mloQs[i].difficulty === "week-1") {
             const filteredArray = [];
-            filteredArray.push(mloQs[i])
-            questionsArray.push.apply(questionsArray, filteredArray)
-          } 
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
         }
       }
       // subtopic APPLICATION
       if ($("input[id='application-box']").is(":checked")) {
         for (let i = 0; i < mloQs.length; i++) {
-          if (mloQs[i].difficulty === "week-1" && mloQs[i].subtopic === "application") {
+          if (
+            mloQs[i].difficulty === "week-1" &&
+            mloQs[i].subtopic === "application"
+          ) {
             const filteredArray = [];
-            filteredArray.push(mloQs[i])
-            questionsArray.push.apply(questionsArray, filteredArray)
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
           }
         }
       }
+      // subtopic MLO TIMELINE
+      if ($("input[id='mlo-timeline-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (
+            mloQs[i].difficulty === "week-1" &&
+            mloQs[i].subtopic === "mlo-timeline"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic DISCLOSURES
+      if ($("input[id='disclosures-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (
+            mloQs[i].difficulty === "week-1" &&
+            mloQs[i].subtopic === "disclosures"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+
       // main topic GMK
       if ($("input[id='gmk-box']").is(":checked")) {
         for (let i = 0; i < gmkQs.length; i++) {
           if (gmkQs[i].difficulty === "week-1") {
             const filteredArray = [];
-            filteredArray.push(gmkQs[i])
-            questionsArray.push.apply(questionsArray, filteredArray)
-          } 
+            filteredArray.push(gmkQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
         }
       }
       // main topic FED LAW
@@ -858,9 +1016,9 @@ $(document).ready(() => {
         for (let i = 0; i < fedlawQs.length; i++) {
           if (fedlawQs[i].difficulty === "week-1") {
             const filteredArray = [];
-            filteredArray.push(fedlawQs[i])
-            questionsArray.push.apply(questionsArray, filteredArray)
-          } 
+            filteredArray.push(fedlawQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
         }
       }
       // main topic ETHICS
@@ -868,9 +1026,9 @@ $(document).ready(() => {
         for (let i = 0; i < ethicsQs.length; i++) {
           if (ethicsQs[i].difficulty === "week-1") {
             const filteredArray = [];
-            filteredArray.push(ethicsQs[i])
-            questionsArray.push.apply(questionsArray, filteredArray)
-          } 
+            filteredArray.push(ethicsQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
         }
       }
       // main topic USC
@@ -878,12 +1036,12 @@ $(document).ready(() => {
         for (let i = 0; i < uscQs.length; i++) {
           if (uscQs[i].difficulty === "week-1") {
             const filteredArray = [];
-            filteredArray.push(uscQs[i])
-            questionsArray.push.apply(questionsArray, filteredArray)
-          } 
+            filteredArray.push(uscQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
         }
       }
-    } 
+    }
     // -------------------------------------------------------------------------------------------
     // week 2 difficulty level block -------------------------------------------------------------
     if ($("input[id='week-2-box']").is(":checked")) {
@@ -892,29 +1050,60 @@ $(document).ready(() => {
         for (let i = 0; i < mloQs.length; i++) {
           if (mloQs[i].difficulty === "week-2") {
             const filteredArray = [];
-            filteredArray.push(mloQs[i])
-            questionsArray.push.apply(questionsArray, filteredArray)
-          } 
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
         }
       }
       // subtopic APPLICATION
       if ($("input[id='application-box']").is(":checked")) {
         for (let i = 0; i < mloQs.length; i++) {
-          if (mloQs[i].difficulty === "week-2" && mloQs[i].subtopic === "application") {
+          if (
+            mloQs[i].difficulty === "week-2" &&
+            mloQs[i].subtopic === "application"
+          ) {
             const filteredArray = [];
-            filteredArray.push(mloQs[i])
-            questionsArray.push.apply(questionsArray, filteredArray)
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
           }
         }
       }
+      // subtopic MLO TIMELINE
+      if ($("input[id='mlo-timeline-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (
+            mloQs[i].difficulty === "week-2" &&
+            mloQs[i].subtopic === "mlo-timeline"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+
+      // subtopic DISCLOSURES
+      if ($("input[id='disclosures-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (
+            mloQs[i].difficulty === "week-2" &&
+            mloQs[i].subtopic === "disclosures"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+
       // main topic GMK
       if ($("input[id='gmk-box']").is(":checked")) {
         for (let i = 0; i < gmkQs.length; i++) {
           if (gmkQs[i].difficulty === "week-2") {
             const filteredArray = [];
-            filteredArray.push(gmkQs[i])
-            questionsArray.push.apply(questionsArray, filteredArray)
-          } 
+            filteredArray.push(gmkQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
         }
       }
       // main topic FED LAW
@@ -922,9 +1111,9 @@ $(document).ready(() => {
         for (let i = 0; i < fedlawQs.length; i++) {
           if (fedlawQs[i].difficulty === "week-2") {
             const filteredArray = [];
-            filteredArray.push(fedlawQs[i])
-            questionsArray.push.apply(questionsArray, filteredArray)
-          } 
+            filteredArray.push(fedlawQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
         }
       }
       // main topic ETHICS
@@ -932,9 +1121,9 @@ $(document).ready(() => {
         for (let i = 0; i < ethicsQs.length; i++) {
           if (ethicsQs[i].difficulty === "week-2") {
             const filteredArray = [];
-            filteredArray.push(ethicsQs[i])
-            questionsArray.push.apply(questionsArray, filteredArray)
-          } 
+            filteredArray.push(ethicsQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
         }
       }
       // main topic USC
@@ -942,12 +1131,12 @@ $(document).ready(() => {
         for (let i = 0; i < uscQs.length; i++) {
           if (uscQs[i].difficulty === "week-2") {
             const filteredArray = [];
-            filteredArray.push(uscQs[i])
-            questionsArray.push.apply(questionsArray, filteredArray)
-          } 
+            filteredArray.push(uscQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
         }
       }
-    } 
+    }
     // -------------------------------------------------------------------------------------------
     // week 3/4 difficulty level block -----------------------------------------------------------
     if ($("input[id='week-3-box']").is(":checked")) {
@@ -956,18 +1145,48 @@ $(document).ready(() => {
         for (let i = 0; i < mloQs.length; i++) {
           if (mloQs[i].difficulty === "week-3") {
             const filteredArray = [];
-            filteredArray.push(mloQs[i])
-            questionsArray.push.apply(questionsArray, filteredArray)
-          } 
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
         }
       }
       // subtopic APPLICATION
       if ($("input[id='application-box']").is(":checked")) {
         for (let i = 0; i < mloQs.length; i++) {
-          if (mloQs[i].difficulty === "week-3" && mloQs[i].subtopic === "application") {
+          if (
+            mloQs[i].difficulty === "week-3" &&
+            mloQs[i].subtopic === "application"
+          ) {
             const filteredArray = [];
-            filteredArray.push(mloQs[i])
-            questionsArray.push.apply(questionsArray, filteredArray)
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic MLO TIMELINE
+      if ($("input[id='mlo-timeline-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (
+            mloQs[i].difficulty === "week-3" &&
+            mloQs[i].subtopic === "mlo-timeline"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+
+      // subtopic DISCLOSURES
+      if ($("input[id='disclosures-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (
+            mloQs[i].difficulty === "week-3" &&
+            mloQs[i].subtopic === "disclosures"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
           }
         }
       }
@@ -976,9 +1195,9 @@ $(document).ready(() => {
         for (let i = 0; i < gmkQs.length; i++) {
           if (gmkQs[i].difficulty === "week-3") {
             const filteredArray = [];
-            filteredArray.push(gmkQs[i])
-            questionsArray.push.apply(questionsArray, filteredArray)
-          } 
+            filteredArray.push(gmkQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
         }
       }
       // main topic FED LAW
@@ -986,9 +1205,9 @@ $(document).ready(() => {
         for (let i = 0; i < fedlawQs.length; i++) {
           if (fedlawQs[i].difficulty === "week-3") {
             const filteredArray = [];
-            filteredArray.push(fedlawQs[i])
-            questionsArray.push.apply(questionsArray, filteredArray)
-          } 
+            filteredArray.push(fedlawQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
         }
       }
       // main topic ETHICS
@@ -996,9 +1215,9 @@ $(document).ready(() => {
         for (let i = 0; i < ethicsQs.length; i++) {
           if (ethicsQs[i].difficulty === "week-3") {
             const filteredArray = [];
-            filteredArray.push(ethicsQs[i])
-            questionsArray.push.apply(questionsArray, filteredArray)
-          } 
+            filteredArray.push(ethicsQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
         }
       }
       // main topic USC
@@ -1006,15 +1225,14 @@ $(document).ready(() => {
         for (let i = 0; i < uscQs.length; i++) {
           if (uscQs[i].difficulty === "week-3") {
             const filteredArray = [];
-            filteredArray.push(uscQs[i])
-            questionsArray.push.apply(questionsArray, filteredArray)
-          } 
+            filteredArray.push(uscQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
         }
       }
-    } 
+    }
     // -------------------------------------------------------------------------------------------
     // ===========================================================================================
-
 
     // old if statements for pushing options to new array ========================================
 
@@ -1054,10 +1272,10 @@ $(document).ready(() => {
       // console.log("gmk");
       questionsArray.push.apply(questionsArray, fhaQs);
     }
-    if ($("input[id='disclosures-box']").is(":checked")) {
-      // console.log("usc");
-      questionsArray.push.apply(questionsArray, disclosureQs);
-    }
+    // if ($("input[id='disclosures-box']").is(":checked")) {
+    //   // console.log("usc");
+    //   questionsArray.push.apply(questionsArray, disclosureQs);
+    // }
 
     console.log(questionsArray);
 
@@ -1081,18 +1299,17 @@ $(document).ready(() => {
         let temporaryArray = questionsArray[i];
         questionsArray[i] = questionsArray[mixedArray];
         questionsArray[mixedArray] = temporaryArray;
-
       }
     }
 
-    shuffleArray(questionsArray)
+    shuffleArray(questionsArray);
 
     // loop through questions based on topic selection
     for (let i = 0; i <= questionsArray.length; i++) {
       if (questionsArray.length === 0) {
         M.toast({
           html:
-            "Oops! Looks like you forgot to choose a topic! Refresh the page and try again.",
+            "Oops! Either you forgot to choose a difficulty level and corresponding topic, or you chose a topic that is currently missing questions for the specified difficulty level.",
         });
       }
       // create questions with temp literal & string interpolation
@@ -1114,7 +1331,6 @@ $(document).ready(() => {
       // console.log(questionsArray[i].question);
       // append questions to page
       $("#new-question").append(newQuestion);
-      
 
       // arrow function doesn't grab parents the same! also can't use it with methods
       // ------------------------------------------------------------
@@ -1124,12 +1340,8 @@ $(document).ready(() => {
       // build a button into the template
       // on click, hide or remove
       $("#old-q-btn").on("click", () => {
-        this.remove()
+        this.remove();
       });
-    
-      
     }
-    
   }
-  
 });
