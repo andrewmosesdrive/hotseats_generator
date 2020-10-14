@@ -1,7 +1,7 @@
 $(document).ready(() => {
   // modal on doc ready for explanation of use
   $('.modal').modal();
-  $('.modal').modal('open');
+  // $('.modal').modal('open');
 
   // create array for each set of questions based on type, with of final Array holding question and answer
   let mloQs = [
@@ -152,7 +152,7 @@ $(document).ready(() => {
   ];
   console.log("GMK has " + gmkQs.length + " questions");
 
-  let ethQs = [
+  let ethicsQs = [
     {
       question: "When is property flipping considered unethical?",
       answer:
@@ -175,7 +175,7 @@ $(document).ready(() => {
       subtopic: "industry-fraud"
     },
   ];
-  console.log("Ethics has " + ethQs.length + " questions");
+  console.log("Ethics has " + ethicsQs.length + " questions");
 
   let uscQs = [
     {
@@ -817,9 +817,13 @@ $(document).ready(() => {
 
   // when clicked, each chosen topic will push it's questions into questionArray
   $("#run-btn").on("click", () => {
+
+    // current iteration of working set of if-statements for checks of both difficulty and topic
     // ===========================================================================================
-    // current iteration of a working set of if-statements for checks of both difficulty and topic
+    
+    // week 1 difficulty level block -------------------------------------------------------------
     if ($("input[id='week-1-box']").is(":checked")) {
+      // main topic MLO
       if ($("input[id='mlo-box']").is(":checked")) {
         for (let i = 0; i < mloQs.length; i++) {
           if (mloQs[i].difficulty === "week-1") {
@@ -829,7 +833,61 @@ $(document).ready(() => {
           } 
         }
       }
-    } else if ($("input[id='week-2-box']").is(":checked")) {
+      // subtopic APPLICATION
+      if ($("input[id='application-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (mloQs[i].difficulty === "week-1" && mloQs[i].subtopic === "application") {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i])
+            questionsArray.push.apply(questionsArray, filteredArray)
+          }
+        }
+      }
+      // main topic GMK
+      if ($("input[id='gmk-box']").is(":checked")) {
+        for (let i = 0; i < gmkQs.length; i++) {
+          if (gmkQs[i].difficulty === "week-1") {
+            const filteredArray = [];
+            filteredArray.push(gmkQs[i])
+            questionsArray.push.apply(questionsArray, filteredArray)
+          } 
+        }
+      }
+      // main topic FED LAW
+      if ($("input[id='fed-law-box']").is(":checked")) {
+        for (let i = 0; i < fedlawQs.length; i++) {
+          if (fedlawQs[i].difficulty === "week-1") {
+            const filteredArray = [];
+            filteredArray.push(fedlawQs[i])
+            questionsArray.push.apply(questionsArray, filteredArray)
+          } 
+        }
+      }
+      // main topic ETHICS
+      if ($("input[id='ethics-box']").is(":checked")) {
+        for (let i = 0; i < ethicsQs.length; i++) {
+          if (ethicsQs[i].difficulty === "week-1") {
+            const filteredArray = [];
+            filteredArray.push(ethicsQs[i])
+            questionsArray.push.apply(questionsArray, filteredArray)
+          } 
+        }
+      }
+      // main topic USC
+      if ($("input[id='usc-box']").is(":checked")) {
+        for (let i = 0; i < uscQs.length; i++) {
+          if (uscQs[i].difficulty === "week-1") {
+            const filteredArray = [];
+            filteredArray.push(uscQs[i])
+            questionsArray.push.apply(questionsArray, filteredArray)
+          } 
+        }
+      }
+    } 
+    // -------------------------------------------------------------------------------------------
+    // week 2 difficulty level block -------------------------------------------------------------
+    if ($("input[id='week-2-box']").is(":checked")) {
+      // main topic MLO
       if ($("input[id='mlo-box']").is(":checked")) {
         for (let i = 0; i < mloQs.length; i++) {
           if (mloQs[i].difficulty === "week-2") {
@@ -839,7 +897,61 @@ $(document).ready(() => {
           } 
         }
       }
-    } else if ($("input[id='week-3-box']").is(":checked")) {
+      // subtopic APPLICATION
+      if ($("input[id='application-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (mloQs[i].difficulty === "week-2" && mloQs[i].subtopic === "application") {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i])
+            questionsArray.push.apply(questionsArray, filteredArray)
+          }
+        }
+      }
+      // main topic GMK
+      if ($("input[id='gmk-box']").is(":checked")) {
+        for (let i = 0; i < gmkQs.length; i++) {
+          if (gmkQs[i].difficulty === "week-2") {
+            const filteredArray = [];
+            filteredArray.push(gmkQs[i])
+            questionsArray.push.apply(questionsArray, filteredArray)
+          } 
+        }
+      }
+      // main topic FED LAW
+      if ($("input[id='fed-law-box']").is(":checked")) {
+        for (let i = 0; i < fedlawQs.length; i++) {
+          if (fedlawQs[i].difficulty === "week-2") {
+            const filteredArray = [];
+            filteredArray.push(fedlawQs[i])
+            questionsArray.push.apply(questionsArray, filteredArray)
+          } 
+        }
+      }
+      // main topic ETHICS
+      if ($("input[id='ethics-box']").is(":checked")) {
+        for (let i = 0; i < ethicsQs.length; i++) {
+          if (ethicsQs[i].difficulty === "week-2") {
+            const filteredArray = [];
+            filteredArray.push(ethicsQs[i])
+            questionsArray.push.apply(questionsArray, filteredArray)
+          } 
+        }
+      }
+      // main topic USC
+      if ($("input[id='usc-box']").is(":checked")) {
+        for (let i = 0; i < uscQs.length; i++) {
+          if (uscQs[i].difficulty === "week-2") {
+            const filteredArray = [];
+            filteredArray.push(uscQs[i])
+            questionsArray.push.apply(questionsArray, filteredArray)
+          } 
+        }
+      }
+    } 
+    // -------------------------------------------------------------------------------------------
+    // week 3/4 difficulty level block -----------------------------------------------------------
+    if ($("input[id='week-3-box']").is(":checked")) {
+      // main topic MLO
       if ($("input[id='mlo-box']").is(":checked")) {
         for (let i = 0; i < mloQs.length; i++) {
           if (mloQs[i].difficulty === "week-3") {
@@ -849,31 +961,83 @@ $(document).ready(() => {
           } 
         }
       }
+      // subtopic APPLICATION
+      if ($("input[id='application-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (mloQs[i].difficulty === "week-3" && mloQs[i].subtopic === "application") {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i])
+            questionsArray.push.apply(questionsArray, filteredArray)
+          }
+        }
+      }
+      // main topic GMK
+      if ($("input[id='gmk-box']").is(":checked")) {
+        for (let i = 0; i < gmkQs.length; i++) {
+          if (gmkQs[i].difficulty === "week-3") {
+            const filteredArray = [];
+            filteredArray.push(gmkQs[i])
+            questionsArray.push.apply(questionsArray, filteredArray)
+          } 
+        }
+      }
+      // main topic FED LAW
+      if ($("input[id='fed-law-box']").is(":checked")) {
+        for (let i = 0; i < fedlawQs.length; i++) {
+          if (fedlawQs[i].difficulty === "week-3") {
+            const filteredArray = [];
+            filteredArray.push(fedlawQs[i])
+            questionsArray.push.apply(questionsArray, filteredArray)
+          } 
+        }
+      }
+      // main topic ETHICS
+      if ($("input[id='ethics-box']").is(":checked")) {
+        for (let i = 0; i < ethicsQs.length; i++) {
+          if (ethicsQs[i].difficulty === "week-3") {
+            const filteredArray = [];
+            filteredArray.push(ethicsQs[i])
+            questionsArray.push.apply(questionsArray, filteredArray)
+          } 
+        }
+      }
+      // main topic USC
+      if ($("input[id='usc-box']").is(":checked")) {
+        for (let i = 0; i < uscQs.length; i++) {
+          if (uscQs[i].difficulty === "week-3") {
+            const filteredArray = [];
+            filteredArray.push(uscQs[i])
+            questionsArray.push.apply(questionsArray, filteredArray)
+          } 
+        }
+      }
     } 
+    // -------------------------------------------------------------------------------------------
     // ===========================================================================================
 
 
-    // currently existing if statements ==========================================================
-    if ($("input[id='fed-law-box']").is(":checked")) {
-      //   console.log("fedlaw");
-      questionsArray.push.apply(questionsArray, fedlawQs);
-    }
-    if ($("input[id='ethics-box']").is(":checked")) {
-      // console.log("ethics");
-      questionsArray.push.apply(questionsArray, ethQs);
-    }
+    // old if statements for pushing options to new array ========================================
+
+    // if ($("input[id='fed-law-box']").is(":checked")) {
+    //   //   console.log("fedlaw");
+    //   questionsArray.push.apply(questionsArray, fedlawQs);
+    // }
+    // if ($("input[id='ethics-box']").is(":checked")) {
+    //   // console.log("ethics");
+    //   questionsArray.push.apply(questionsArray, ethicsQs);
+    // }
     // if ($("input[id='mlo-box']").is(":checked")) {
     //   // console.log("mlo");
     //   questionsArray.push.apply(questionsArray, mloQs);
     // }
-    if ($("input[id='gmk-box']").is(":checked")) {
-      // console.log("gmk");
-      questionsArray.push.apply(questionsArray, gmkQs);
-    }
-    if ($("input[id='usc-box']").is(":checked")) {
-      // console.log("usc");
-      questionsArray.push.apply(questionsArray, uscQs);
-    }
+    // if ($("input[id='gmk-box']").is(":checked")) {
+    //   // console.log("gmk");
+    //   questionsArray.push.apply(questionsArray, gmkQs);
+    // }
+    // if ($("input[id='usc-box']").is(":checked")) {
+    //   // console.log("usc");
+    //   questionsArray.push.apply(questionsArray, uscQs);
+    // }
     if ($("input[id='respa-box']").is(":checked")) {
       //   console.log("fedlaw");
       questionsArray.push.apply(questionsArray, respaQs);
@@ -905,7 +1069,7 @@ $(document).ready(() => {
   // function for deploying questions, adding them to the page dynamically
   function deployQs() {
     // first hide initial content
-    let hideChecks = $(".checkbox-container");
+    let hideChecks = $(".choices-container");
     let hideSendIt = $("#run-btn");
     hideChecks.hide();
     hideSendIt.hide();
