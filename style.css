@@ -9,3 +9,7 @@ nav {
 .card-title {
     padding-bottom: 10px;
 }
+
+.credit {
+    font-weight: bold;
+}
