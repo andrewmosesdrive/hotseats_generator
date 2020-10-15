@@ -1,9 +1,9 @@
 $(document).ready(() => {
   // modal on doc ready for explanation of use
   $(".modal").modal();
-  // $('.modal').modal('open');
+  $('.modal').modal('open');
 
-  // create array for each set of questions based on type, with of final Array holding question and answer
+  // create array for each set of questions based on major topic (with property: subtopic and property: difficulty) with of final Array holding question and answer of choices
   let mloQs = [
     {
       question:
@@ -999,7 +999,71 @@ $(document).ready(() => {
           }
         }
       }
-
+      // subtopic CLOSING
+      if ($("input[id='closing-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (
+            mloQs[i].difficulty === "week-1" &&
+            mloQs[i].subtopic === "closing"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic OWNERSHIP
+      if ($("input[id='ownership-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (
+            mloQs[i].difficulty === "week-1" &&
+            mloQs[i].subtopic === "ownership"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic REPAYMENT
+      if ($("input[id='repayment-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (
+            mloQs[i].difficulty === "week-1" &&
+            mloQs[i].subtopic === "repayment"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic THIRD PARTY SERVICES 
+      if ($("input[id='third-party-services-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (
+            mloQs[i].difficulty === "week-1" &&
+            mloQs[i].subtopic === "third-party-services"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic INSURANCES
+      if ($("input[id='insurances-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (
+            mloQs[i].difficulty === "week-1" &&
+            mloQs[i].subtopic === "insurances"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
       // main topic GMK
       if ($("input[id='gmk-box']").is(":checked")) {
         for (let i = 0; i < gmkQs.length; i++) {
@@ -1263,7 +1327,71 @@ $(document).ready(() => {
           }
         }
       }
-
+      // subtopic CLOSING
+      if ($("input[id='closing-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (
+            mloQs[i].difficulty === "week-2" &&
+            mloQs[i].subtopic === "closing"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic OWNERSHIP
+      if ($("input[id='ownership-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (
+            mloQs[i].difficulty === "week-2" &&
+            mloQs[i].subtopic === "ownership"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic REPAYMENT
+      if ($("input[id='repayment-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (
+            mloQs[i].difficulty === "week-2" &&
+            mloQs[i].subtopic === "repayment"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic THIRD PARTY SERVICES 
+      if ($("input[id='third-party-services-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (
+            mloQs[i].difficulty === "week-2" &&
+            mloQs[i].subtopic === "third-party-services"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic INSURANCES
+      if ($("input[id='insurances-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (
+            mloQs[i].difficulty === "week-2" &&
+            mloQs[i].subtopic === "insurances"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
       // main topic GMK
       if ($("input[id='gmk-box']").is(":checked")) {
         for (let i = 0; i < gmkQs.length; i++) {
@@ -1520,6 +1648,71 @@ $(document).ready(() => {
           if (
             mloQs[i].difficulty === "week-3" &&
             mloQs[i].subtopic === "disclosures"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic CLOSING
+      if ($("input[id='closing-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (
+            mloQs[i].difficulty === "week-3" &&
+            mloQs[i].subtopic === "closing"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic OWNERSHIP
+      if ($("input[id='ownership-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (
+            mloQs[i].difficulty === "week-3" &&
+            mloQs[i].subtopic === "ownership"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic REPAYMENT
+      if ($("input[id='repayment-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (
+            mloQs[i].difficulty === "week-3" &&
+            mloQs[i].subtopic === "repayment"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic THIRD PARTY SERVICES 
+      if ($("input[id='third-party-services-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (
+            mloQs[i].difficulty === "week-3" &&
+            mloQs[i].subtopic === "third-party-services"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(mloQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic INSURANCES
+      if ($("input[id='insurances-box']").is(":checked")) {
+        for (let i = 0; i < mloQs.length; i++) {
+          if (
+            mloQs[i].difficulty === "week-3" &&
+            mloQs[i].subtopic === "insurances"
           ) {
             const filteredArray = [];
             filteredArray.push(mloQs[i]);
