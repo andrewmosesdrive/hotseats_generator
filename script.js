@@ -1,7 +1,9 @@
 $(document).ready(() => {
   // modal on doc ready for explanation of use
-  $(".modal").modal();
-  $('.modal').modal('open');
+  // $(".modal").modal();
+  // $('.modal').modal('open');
+  $('.sidenav').sidenav();
+
 
   // create array for each set of questions based on major topic (with property: subtopic and property: difficulty) with of final Array holding question and answer of choices
   let mloQs = [
