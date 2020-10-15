@@ -6,10 +6,11 @@ $(document).ready(() => {
   // create array for each set of questions based on type, with of final Array holding question and answer
   let mloQs = [
     {
-      question: "blank",
-      answer: "blank",
-      difficulty: "week-3",
-      subtopic: "blank",
+      question:
+        "After Fannie and Freddie have purchased loans, the bundling of those loans into mortgage backed securities and the subsequent sale on the secondary market is known as what?",
+      answer: "Securitization",
+      difficulty: "week-2",
+      subtopic: "mlo-timeline",
     },
     {
       question:
@@ -98,13 +99,6 @@ $(document).ready(() => {
 
   let gmkQs = [
     {
-      question:
-        "After Fannie and Freddie have purchased loans, the bundling of those loans into mortgage backed securities and the subsequent sale on the secondary market is known as what?",
-      answer: "Securitization",
-      difficulty: "week-2",
-      subtopic: "ownership",
-    },
-    {
       question: "What is the automated underwriting system for FHA and VA?",
       answer: "TOTAL (Technology Open to Approved Lenders)",
       difficulty: "week-2",
@@ -181,6 +175,12 @@ $(document).ready(() => {
       answer: "The margin and the index",
       difficulty: "week-1",
       subtopic: "products",
+    },
+    {
+      question: "blank",
+      answer: "blank",
+      difficulty: "week-1",
+      subtopic: "vocab",
     },
   ];
   console.log("GMK has " + gmkQs.length + " questions");
@@ -465,157 +465,157 @@ $(document).ready(() => {
       question: "What does TILA stand for and what regulation letter is it?",
       answer: "Truth in Lending Act, Reg Z",
       difficulty: "week-2",
-      subtopic: "tila"
+      subtopic: "tila",
     },
     {
       question: "Who does TILA govern?",
       answer: "People or organizations who regularly extend credit",
       difficulty: "week-2",
-      subtopic: "tila"
+      subtopic: "tila",
     },
     {
       question: "What kinds of costs does TILA govern?",
       answer: "Finance charges",
       difficulty: "week-2",
-      subtopic: "tila"
+      subtopic: "tila",
     },
     {
       question: "What is a finance charge?",
       answer: "Costs/fees associated with obtaining the loan",
       difficulty: "week-2",
-      subtopic: "tila"
+      subtopic: "tila",
     },
     {
       question: "What is a trigger term?",
       answer:
         "Loan elements that require additional information to understand actual costs",
       difficulty: "week-2",
-      subtopic: "tila"
+      subtopic: "tila",
     },
     {
       question: "What does TILA says advertisements must be?",
       answer: "Clear and conspicuous",
       difficulty: "week-2",
-      subtopic: "tila"
+      subtopic: "tila",
     },
     {
       question: "What is section 19 of TILA?",
       answer: "MDIA (Mortgage Disclosure Improvement Act",
       difficulty: "week-2",
-      subtopic: "tila"
+      subtopic: "tila",
     },
     {
       question:
         "Per TILA, what is the APR tolerance for adjustable rate mortgages?",
       answer: ".25%",
       difficulty: "week-2",
-      subtopic: "tila"
+      subtopic: "tila",
     },
     {
       question:
         "What does MDIA require from the borrower before charging non-refundable fees?",
       answer: "Intent to proceed",
       difficulty: "week-2",
-      subtopic: "tila"
+      subtopic: "tila",
     },
     {
       question:
         "Per TILA when is the soonest the borrower can close upon receiving their initial disclosures?",
       answer: "7 business days",
       difficulty: "week-2",
-      subtopic: "tila"
+      subtopic: "tila",
     },
     {
       question:
         "What section of TILA requires the delivery of the Note of Right to Cancel?",
       answer: "Section 23",
       difficulty: "week-2",
-      subtopic: "tila"
+      subtopic: "tila",
     },
     {
       question: "What is another name for a high cost loan under TILA?",
       answer: "A covered loan (AKA HOEPA loan)",
       difficulty: "week-2",
-      subtopic: "tila"
+      subtopic: "tila",
     },
     {
       question: "What does TILA's Valuation Independence rule say?",
       answer:
         "Appraisers must be unbiased in determining value of property and act independently from any outside influence or coercion",
       difficulty: "week-2",
-      subtopic: "tila"
+      subtopic: "tila",
     },
     {
       question:
         "Loans that meet QM standards provide more certainty in the secondary market for whom?",
       answer: "Investors",
       difficulty: "week-2",
-      subtopic: "tila"
+      subtopic: "tila",
     },
     {
       question:
         "What disclosure required by TILA informs borrowers of estimated costs for their closed-end mortgage loan?",
       answer: "The loan estimate",
       difficulty: "week-2",
-      subtopic: "tila"
+      subtopic: "tila",
     },
     {
       question: "What section of TILA has rules about MLO compensation?",
       answer: "Section 36",
       difficulty: "week-2",
-      subtopic: "tila"
+      subtopic: "tila",
     },
     {
       question: "What types of loans does the right to rescind apply to?",
       answer:
         "Refinances on primary residences, reverse mortgages, HELOCs, and HELs",
       difficulty: "week-2",
-      subtopic: "tila"
+      subtopic: "tila",
     },
     {
       question: "What section of TILA includes the Covered Loan Notice?",
       answer: "Section 32",
       difficulty: "week-2",
-      subtopic: "tila"
+      subtopic: "tila",
     },
     {
       question: "What is the purpose of the Fair Housing Act?",
       answer: "To prevent discrimination in housing",
       difficult: "week-2",
-      subtopic: "fairness-laws"
+      subtopic: "fairness-laws",
     },
     {
       question: "What is the regulation letter for ECOA?",
       answer: "Reg B",
       difficulty: "week-2",
-      subtopic: "ecoa"
+      subtopic: "ecoa",
     },
     {
       question: "What does ECOA stand for?",
       answer: "Equal Credit Opportunity Act",
       difficulty: "week-2",
-      subtopic: "ecoa"
+      subtopic: "ecoa",
     },
     {
       question: "What is the purpose of ECOA?",
       answer:
         "To ensure that all people have the right to apply for an obtain credit",
       difficulty: "week-2",
-      subtopic: "ecoa"
+      subtopic: "ecoa",
     },
     {
       question:
         "What section of the URLA helps ensure MLO's are following the guidelines of ECOA?",
       answer: "Title X - Government monitoring information",
       difficulty: "week-3",
-      subtopic: "ecoa"
+      subtopic: "ecoa",
     },
     {
       question:
         "When is it okay to inquire about race, ethnicity, gender, immigration status, marital status, or age?",
       answer: "To determine if the borrower is eligible for special programs",
       difficulty: "week-3",
-      subtopic: "ecoa"
+      subtopic: "ecoa",
     },
     {
       question:
@@ -623,48 +623,48 @@ $(document).ready(() => {
       answer:
         "Reverse mortgage (62 or older), and at least 18 to obtain a mortgage",
       difficulty: "week-3",
-      subtopic: "ecoa"
+      subtopic: "ecoa",
     },
     {
       question: "What is disparate treatment?",
       answer:
         "Credit discrimination demonstrated when a lender treats an applicant or borrower differently based on one or more of ECOA's prohibited factors",
       difficulty: "week-2",
-      subtopic: "ecoa"
+      subtopic: "ecoa",
     },
     {
       question:
         "What disclosure goes out once a decision is made in determining the borrowers application status?",
       answer: "Notice of Action Taken",
       difficulty: "week-3",
-      subtopic: "ecoa"
+      subtopic: "ecoa",
     },
     {
       question: "What does ECOA's Valuation Rule say?",
       answer:
         "A copy of the appraisal must be provided to the borrower as soon as the MLO is done processing the report",
       difficulty: "week-2",
-      subtopic: "ecoa"
+      subtopic: "ecoa",
     },
     {
       question:
         "What is another name for the Notice of Action Taken in the case of a credit denial?",
       answer: "Adverse Action (Notice of Credit Denied)",
       difficulty: "week-2",
-      subtopic: "ecoa"
+      subtopic: "ecoa",
     },
     {
       question: "What act was ECOA added to?",
       answer: "CCPA (Consumer Credit Protection Act)",
       difficulty: "week-3",
-      subtopic: "ecoa"
+      subtopic: "ecoa",
     },
     {
       question:
         "What is referred to as seemingly legal or neutral behavior which has a negative impact on a group of people?",
       answer: "Disparate impact",
       difficulty: "week-2",
-      subtopic: "ecoa"
+      subtopic: "ecoa",
     },
     {
       question:
@@ -672,42 +672,42 @@ $(document).ready(() => {
       answer:
         "Race, color, religion, national origin, gender, marital status, age (keep in mind disability and familial status, which are not listed)",
       difficulty: "week-2",
-      subtopic: "ecoa"
+      subtopic: "ecoa",
     },
     {
       question:
         "What form of discriminatory behavior occurs when the discrimination is blatantly obvious?",
       answer: "Overt evidence",
       difficulty: "week-2",
-      subtopic: "ecoa"
+      subtopic: "ecoa",
     },
     {
       question:
         "How long does ECOA require the Notice of Credit Denied be retained",
       answer: "25 months",
       difficulty: "week-3",
-      subtopic: "ecoa"
+      subtopic: "ecoa",
     },
     {
       question:
         "Who is ultimately responsible for the accuracy of information on the application in the eyes of the low?",
       answer: "The borrower",
       difficulty: "week-2",
-      subtopic: "ecoa"
+      subtopic: "ecoa",
     },
     {
       question: "What are the three acts that make up the Do Not Call Laws?",
       answer:
         "TCPA (Telephone Consumer Protection Act), DNCIA (Do Not Call Implementation Act), and the DNCIA (Do Not Call Improvement Act",
       difficulty: "week-3",
-      subtopic: "consumer-contact-laws"
+      subtopic: "consumer-contact-laws",
     },
     {
       question:
         "The Gramm-Leach-Bliley Act specifies that a consumer must be given what amount of time to opt-out before personal financial information is disclosed to a third party?",
       answer: "A reasonable opportunity",
       difficulty: "week-3",
-      subtopic: "consumer-contact-laws"
+      subtopic: "consumer-contact-laws",
     },
     {
       question:
@@ -715,13 +715,13 @@ $(document).ready(() => {
       answer:
         "These programs help MLO's detect money laundering, fraud, and pre-texting (phishing) schemes so we can better protect clients",
       difficulty: "week-3",
-      subtopic: "financial-crimes-laws"
+      subtopic: "financial-crimes-laws",
     },
     {
       question: "What is the primary goal of the Red Flags Rule?",
       answer: "To detect patterns and practices of identity theft",
       difficulty: "week-2",
-      subtopic: "consumer-contact-laws"
+      subtopic: "consumer-contact-laws",
     },
     {
       question:
@@ -729,68 +729,68 @@ $(document).ready(() => {
       answer:
         "FCRA/FACTA (Fair Credit Reporting Act/Fair and Accurate Credit Transactions Act)",
       difficulty: "week-2",
-      subtopic: "consumer-contact-laws"
+      subtopic: "consumer-contact-laws",
     },
     {
       question:
         "What rule under FACTA (Fair and Accurate Credit Transactions Act) requires businesses to implement an identity theft prevention program into their daily activites?",
       answer: "Red Flags Rule",
       difficulty: "week-2",
-      subtopic: "consumer-contact-laws"
+      subtopic: "consumer-contact-laws",
     },
     {
       question:
         "Which law places limitations and restrictions on lenders regarding the use of non-public personal information?",
       answer: "The Gramm-Leach-Bliley Act",
       difficulty: "week-2",
-      subtopic: "consumer-contact-laws"
+      subtopic: "consumer-contact-laws",
     },
     {
       question:
         "Under FACTA (Fair and Accurate Credit Transactions Act), all derogatory credit information must be reported on a consumers report for no longer than how many years?",
       answer: "7 years",
       difficulty: "week-2",
-      subtopic: "consumer-contact-laws"
+      subtopic: "consumer-contact-laws",
     },
     {
       question:
         "CRA's must place a one-call fraud alert on a consumer's credit report if the consumer claims a suspicion that they are or will be a victim of identity theft. This fraud alert must be filed in the consumer's credit report for a period of no less than how many months?",
       answer: "12 months",
       difficulty: "week-3",
-      subtopic: "consumer-contact-laws"
+      subtopic: "consumer-contact-laws",
     },
     {
       question:
         "Action can be taken against a mortgage professional or institution for 2 years after the date of discovery of the FCRA or FACTA violation, and must be taken within how many years of violation?",
       answer: "5 years",
       difficulty: "week-3",
-      subtopic: "consumer-contact laws"
+      subtopic: "consumer-contact laws",
     },
     {
       question: "GLBA (Gramm-Leach-Bliley Act) is regulated by whom?",
       answer: "The FTC",
       difficulty: "week-2",
-      subtopic: "consumer-contact-laws"
+      subtopic: "consumer-contact-laws",
     },
     {
       question: "Regulation P, which was added to GLBA, is regulated by whom?",
       answer: "The CFPB",
       difficulty: "week-2",
-      subtopic: "consumer-contact-laws"
+      subtopic: "consumer-contact-laws",
     },
     {
       question: "What is phishing/pre-texting?",
       answer:
         "The act of obtaining an individual's non-public personal information through false pretenses (without authorization)",
       difficulty: "week-2",
-      subtopic: "consumer-contact-laws"
+      subtopic: "consumer-contact-laws",
     },
     {
       question:
         "According to the TCPA (Telephone Consumer Protection Act), telephone solicitation may only occur between what hours and in which time zone?",
       answer: "8am-9pm in the consumer's time zone",
       difficulty: "week-2",
-      subtopic: "consumer-contact-laws"
+      subtopic: "consumer-contact-laws",
     },
     {
       question:
@@ -798,136 +798,135 @@ $(document).ready(() => {
       answer:
         "FTC (Federal Trade Commission) and FCC (Federal Communications Commission); FTC is interstate only, and FCC is interstate and intrastate",
       difficulty: "week-3",
-      subtopic: "consumer-contact-laws"
+      subtopic: "consumer-contact-laws",
     },
     {
       question: "Who is the regulatory authority for the E-SIGN Act?",
       answer:
         "It depends on which law the disclosure being signed falls under (ex. TILA disclosure = CFPB)",
       difficulty: "week-3",
-      subtopic: "consumer-contact-laws"
+      subtopic: "consumer-contact-laws",
     },
     {
       question:
         "Under MAP (Mortgage Acts and Practices), AKA Reg N, how long must copies of commercial communication be retained?",
       answer: "2 years",
       difficulty: "week-3",
-      subtopic: "consumer-contact-laws"
+      subtopic: "consumer-contact-laws",
     },
     {
       question: "What type of mortgage loans does RESPA govern?",
       answer: "Mortgage loans secured by residential property",
       difficulty: "week-2",
-      subtopic: "respa"
+      subtopic: "respa",
     },
     {
       question: "What is a traditional mortgage?",
       answer: "A 30-year fixed",
       difficulty: "week-2",
-      subtopic: "respa"
+      subtopic: "respa",
     },
     {
       question: "What does RESPA stand for?",
       answer: "Real Estate Settlement Procedures Act",
       difficulty: "week-2",
-      subtopic: "respa"
+      subtopic: "respa",
     },
     {
       question: "What is the purpose of RESPA?",
       answer:
         "Ensure consumers can make informed decisions about real estate transactions by providing transparency into the costs of settlement",
       difficulty: "week-2",
-      subtopic: "respa"
+      subtopic: "respa",
     },
     {
       question: "What is a settlement service?",
       answer:
         "Any service provided in connection with the real estate transaction, specifically third party services",
       difficulty: "week-2",
-      subtopic: "respa"
+      subtopic: "respa",
     },
     {
       question: "What is loss mitigation?",
       answer:
         "An agreement between the borrower and servicer to make the loan more affordable by changing the terms (modification, forbearance, debt forgiveness)",
       difficulty: "week-2",
-      subtopic: "respa"
+      subtopic: "respa",
     },
     {
       question: "What is the purpose of section 6 of RESPA?",
-      answer:
-        "It sets general rules for Servicers with 4 main objectives",
+      answer: "It sets general rules for Servicers with 4 main objectives",
       difficulty: "week-2",
-      subtopic: "respa"
+      subtopic: "respa",
     },
     {
       question: "What is the purpose of section 8 of RESPA?",
       answer: "It sets rules about referrals, referral fees, and kickbacks",
       difficulty: "week-2",
-      subtopic: "respa"
+      subtopic: "respa",
     },
     {
       question: "What is the purpose of section 9 of RESPA?",
       answer: "To provide clients the right to choose their own title agent",
       difficulty: "week-2",
-      subtopic: "respa"
+      subtopic: "respa",
     },
     {
       question: "What is the purpose of section 10 of RESPA?",
       answer: "To ensure escrow accounts are handled correctly and ethically",
       difficulty: "week-2",
-      subtopic: "respa"
+      subtopic: "respa",
     },
     {
       question: "Which section of RESPA does the MSDS fall under?",
       answer: "Section 6",
       difficulty: "week-2",
-      subtopic: "respa"
+      subtopic: "respa",
     },
     {
       question: "What does the MSDS stand for?",
       answer: "Mortgage Servicing Disclosure Statement",
       difficulty: "week-2",
-      subtopic: "respa"
+      subtopic: "respa",
     },
     {
       question: "What does the MSDS tell the borrower?",
       answer:
         "The likelihood that their loan may be assigned to another party for servicing in the future",
       difficulty: "week-2",
-      subtopic: "respa"
+      subtopic: "respa",
     },
     {
       question: "What does the NTS stand for?",
       answer: "Notice of Transfer Statement",
       difficulty: "week-2",
-      subtopic: "respa"
+      subtopic: "respa",
     },
     {
       question: "What are some examples of settlement services?",
       answer:
         "Appraisal, pest inspection, survey, credit reporting, title work",
       difficulty: "week-2",
-      subtopic: "respa"
+      subtopic: "respa",
     },
     {
       question: "What is the regulation letter for RESPA?",
       answer: "Regulation X",
       difficulty: "week-2",
-      subtopic: "respa"
+      subtopic: "respa",
     },
     {
       question: "What regulatory agency regulates RESPA?",
       answer: "The CFPB",
       difficulty: "week-2",
-      subtopic: "respa"
+      subtopic: "respa",
     },
     {
       question: "What does RESPA not govern?",
       answer:
         "Agriculture, Business, Commercial, Temporary, Timeshare, property greater than 25 acres",
       difficulty: "week-3",
-      subtopic: "respa"
+      subtopic: "respa",
     },
   ];
   console.log("Fed Law has " + fedlawQs.length + " questions");
@@ -1011,10 +1010,127 @@ $(document).ready(() => {
           }
         }
       }
+      // subtopic PROGRAMS
+      if ($("input[id='programs-box']").is(":checked")) {
+        for (let i = 0; i < gmkQs.length; i++) {
+          if (
+            gmkQs[i].difficulty === "week-1" &&
+            gmkQs[i].subtopic === "programs"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(gmkQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic PRODUCTS
+      if ($("input[id='products-box']").is(":checked")) {
+        for (let i = 0; i < gmkQs.length; i++) {
+          if (
+            gmkQs[i].difficulty === "week-1" &&
+            gmkQs[i].subtopic === "products"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(gmkQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic VOCAB
+      if ($("input[id='vocab-box']").is(":checked")) {
+        for (let i = 0; i < gmkQs.length; i++) {
+          if (
+            gmkQs[i].difficulty === "week-1" &&
+            gmkQs[i].subtopic === "vocab"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(gmkQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
       // main topic FED LAW
       if ($("input[id='fed-law-box']").is(":checked")) {
         for (let i = 0; i < fedlawQs.length; i++) {
           if (fedlawQs[i].difficulty === "week-1") {
+            const filteredArray = [];
+            filteredArray.push(fedlawQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic TILA
+      if ($("input[id='tila-box']").is(":checked")) {
+        for (let i = 0; i < fedlawQs.length; i++) {
+          if (
+            fedlawQs[i].difficulty === "week-1" &&
+            fedlawQs[i].subtopic === "tila"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(fedlawQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic RESPA
+      if ($("input[id='respa-box']").is(":checked")) {
+        for (let i = 0; i < fedlawQs.length; i++) {
+          if (
+            fedlawQs[i].difficulty === "week-1" &&
+            fedlawQs[i].subtopic === "respa"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(fedlawQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic CONSUMER-CONTACT-LAWS
+      if ($("input[id='consumer-contact-laws-box']").is(":checked")) {
+        for (let i = 0; i < fedlawQs.length; i++) {
+          if (
+            fedlawQs[i].difficulty === "week-1" &&
+            fedlawQs[i].subtopic === "consumer-contact-laws"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(fedlawQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic FINANCIAL-CRIMES-LAWS
+      if ($("input[id='financial-crimes-laws-box']").is(":checked")) {
+        for (let i = 0; i < fedlawQs.length; i++) {
+          if (
+            fedlawQs[i].difficulty === "week-1" &&
+            fedlawQs[i].subtopic === "financial-crimes-laws"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(fedlawQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic FAIRNESS-LAWS
+      if ($("input[id='fairness-laws-box']").is(":checked")) {
+        for (let i = 0; i < fedlawQs.length; i++) {
+          if (
+            fedlawQs[i].difficulty === "week-1" &&
+            fedlawQs[i].subtopic === "fairness-laws"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(fedlawQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic ECOA
+      if ($("input[id='ecoa-box']").is(":checked")) {
+        for (let i = 0; i < fedlawQs.length; i++) {
+          if (
+            fedlawQs[i].difficulty === "week-1" &&
+            fedlawQs[i].subtopic === "ecoa"
+          ) {
             const filteredArray = [];
             filteredArray.push(fedlawQs[i]);
             questionsArray.push.apply(questionsArray, filteredArray);
@@ -1031,10 +1147,62 @@ $(document).ready(() => {
           }
         }
       }
+      // subtopic BORROWER FRAUD
+      if ($("input[id='borrower-fraud-box']").is(":checked")) {
+        for (let i = 0; i < ethicsQs.length; i++) {
+          if (
+            ethicsQs[i].difficulty === "week-1" &&
+            ethicsQs[i].subtopic === "borrower-fraud"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(ethicsQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic INDUSTRY FRAUD
+      if ($("input[id='industry-fraud-box']").is(":checked")) {
+        for (let i = 0; i < ethicsQs.length; i++) {
+          if (
+            ethicsQs[i].difficulty === "week-1" &&
+            ethicsQs[i].subtopic === "industry-fraud"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(ethicsQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
       // main topic USC
       if ($("input[id='usc-box']").is(":checked")) {
         for (let i = 0; i < uscQs.length; i++) {
           if (uscQs[i].difficulty === "week-1") {
+            const filteredArray = [];
+            filteredArray.push(uscQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic AGENCIES
+      if ($("input[id='agencies-box']").is(":checked")) {
+        for (let i = 0; i < uscQs.length; i++) {
+          if (
+            uscQs[i].difficulty === "week-1" &&
+            uscQs[i].subtopic === "agencies"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(uscQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic YOUR LICENSE
+      if ($("input[id='your-license-box']").is(":checked")) {
+        for (let i = 0; i < uscQs.length; i++) {
+          if (
+            uscQs[i].difficulty === "week-1" &&
+            uscQs[i].subtopic === "your-license"
+          ) {
             const filteredArray = [];
             filteredArray.push(uscQs[i]);
             questionsArray.push.apply(questionsArray, filteredArray);
@@ -1106,10 +1274,127 @@ $(document).ready(() => {
           }
         }
       }
+      // subtopic PROGRAMS
+      if ($("input[id='programs-box']").is(":checked")) {
+        for (let i = 0; i < gmkQs.length; i++) {
+          if (
+            gmkQs[i].difficulty === "week-2" &&
+            gmkQs[i].subtopic === "programs"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(gmkQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic PRODUCTS
+      if ($("input[id='products-box']").is(":checked")) {
+        for (let i = 0; i < gmkQs.length; i++) {
+          if (
+            gmkQs[i].difficulty === "week-2" &&
+            gmkQs[i].subtopic === "products"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(gmkQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic VOCAB
+      if ($("input[id='vocab-box']").is(":checked")) {
+        for (let i = 0; i < gmkQs.length; i++) {
+          if (
+            gmkQs[i].difficulty === "week-2" &&
+            gmkQs[i].subtopic === "vocab"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(gmkQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
       // main topic FED LAW
       if ($("input[id='fed-law-box']").is(":checked")) {
         for (let i = 0; i < fedlawQs.length; i++) {
           if (fedlawQs[i].difficulty === "week-2") {
+            const filteredArray = [];
+            filteredArray.push(fedlawQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic TILA
+      if ($("input[id='tila-box']").is(":checked")) {
+        for (let i = 0; i < fedlawQs.length; i++) {
+          if (
+            fedlawQs[i].difficulty === "week-2" &&
+            fedlawQs[i].subtopic === "tila"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(fedlawQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic RESPA
+      if ($("input[id='respa-box']").is(":checked")) {
+        for (let i = 0; i < fedlawQs.length; i++) {
+          if (
+            fedlawQs[i].difficulty === "week-2" &&
+            fedlawQs[i].subtopic === "respa"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(fedlawQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic CONSUMER-CONTACT-LAWS
+      if ($("input[id='consumer-contact-laws-box']").is(":checked")) {
+        for (let i = 0; i < fedlawQs.length; i++) {
+          if (
+            fedlawQs[i].difficulty === "week-2" &&
+            fedlawQs[i].subtopic === "consumer-contact-laws"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(fedlawQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic FINANCIAL-CRIMES-LAWS
+      if ($("input[id='financial-crimes-laws-box']").is(":checked")) {
+        for (let i = 0; i < fedlawQs.length; i++) {
+          if (
+            fedlawQs[i].difficulty === "week-2" &&
+            fedlawQs[i].subtopic === "financial-crimes-laws"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(fedlawQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic FAIRNESS-LAWS
+      if ($("input[id='fairness-laws-box']").is(":checked")) {
+        for (let i = 0; i < fedlawQs.length; i++) {
+          if (
+            fedlawQs[i].difficulty === "week-2" &&
+            fedlawQs[i].subtopic === "fairness-laws"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(fedlawQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic ECOA
+      if ($("input[id='ecoa-box']").is(":checked")) {
+        for (let i = 0; i < fedlawQs.length; i++) {
+          if (
+            fedlawQs[i].difficulty === "week-2" &&
+            fedlawQs[i].subtopic === "ecoa"
+          ) {
             const filteredArray = [];
             filteredArray.push(fedlawQs[i]);
             questionsArray.push.apply(questionsArray, filteredArray);
@@ -1126,10 +1411,62 @@ $(document).ready(() => {
           }
         }
       }
+       // subtopic BORROWER FRAUD
+       if ($("input[id='borrower-fraud-box']").is(":checked")) {
+        for (let i = 0; i < ethicsQs.length; i++) {
+          if (
+            ethicsQs[i].difficulty === "week-2" &&
+            ethicsQs[i].subtopic === "borrower-fraud"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(ethicsQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic INDUSTRY FRAUD
+      if ($("input[id='industry-fraud-box']").is(":checked")) {
+        for (let i = 0; i < ethicsQs.length; i++) {
+          if (
+            ethicsQs[i].difficulty === "week-2" &&
+            ethicsQs[i].subtopic === "industry-fraud"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(ethicsQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
       // main topic USC
       if ($("input[id='usc-box']").is(":checked")) {
         for (let i = 0; i < uscQs.length; i++) {
           if (uscQs[i].difficulty === "week-2") {
+            const filteredArray = [];
+            filteredArray.push(uscQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic AGENCIES
+      if ($("input[id='agencies-box']").is(":checked")) {
+        for (let i = 0; i < uscQs.length; i++) {
+          if (
+            uscQs[i].difficulty === "week-2" &&
+            uscQs[i].subtopic === "agencies"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(uscQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic YOUR LICENSE  
+      if ($("input[id='your-license-box']").is(":checked")) {
+        for (let i = 0; i < uscQs.length; i++) {
+          if (
+            uscQs[i].difficulty === "week-2" &&
+            uscQs[i].subtopic === "your-license"
+          ) {
             const filteredArray = [];
             filteredArray.push(uscQs[i]);
             questionsArray.push.apply(questionsArray, filteredArray);
@@ -1200,10 +1537,127 @@ $(document).ready(() => {
           }
         }
       }
+      // subtopic PROGRAMS
+      if ($("input[id='programs-box']").is(":checked")) {
+        for (let i = 0; i < gmkQs.length; i++) {
+          if (
+            gmkQs[i].difficulty === "week-3" &&
+            gmkQs[i].subtopic === "programs"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(gmkQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic PRODUCTS
+      if ($("input[id='products-box']").is(":checked")) {
+        for (let i = 0; i < gmkQs.length; i++) {
+          if (
+            gmkQs[i].difficulty === "week-3" &&
+            gmkQs[i].subtopic === "products"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(gmkQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic VOCAB
+      if ($("input[id='vocab-box']").is(":checked")) {
+        for (let i = 0; i < gmkQs.length; i++) {
+          if (
+            gmkQs[i].difficulty === "week-3" &&
+            gmkQs[i].subtopic === "vocab"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(gmkQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
       // main topic FED LAW
       if ($("input[id='fed-law-box']").is(":checked")) {
         for (let i = 0; i < fedlawQs.length; i++) {
           if (fedlawQs[i].difficulty === "week-3") {
+            const filteredArray = [];
+            filteredArray.push(fedlawQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic TILA
+      if ($("input[id='tila-box']").is(":checked")) {
+        for (let i = 0; i < fedlawQs.length; i++) {
+          if (
+            fedlawQs[i].difficulty === "week-3" &&
+            fedlawQs[i].subtopic === "tila"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(fedlawQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic RESPA
+      if ($("input[id='respa-box']").is(":checked")) {
+        for (let i = 0; i < fedlawQs.length; i++) {
+          if (
+            fedlawQs[i].difficulty === "week-3" &&
+            fedlawQs[i].subtopic === "respa"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(fedlawQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic CONSUMER-CONTACT-LAWS
+      if ($("input[id='consumer-contact-laws-box']").is(":checked")) {
+        for (let i = 0; i < fedlawQs.length; i++) {
+          if (
+            fedlawQs[i].difficulty === "week-3" &&
+            fedlawQs[i].subtopic === "consumer-contact-laws"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(fedlawQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic FINANCIAL-CRIMES-LAWS
+      if ($("input[id='financial-crimes-laws-box']").is(":checked")) {
+        for (let i = 0; i < fedlawQs.length; i++) {
+          if (
+            fedlawQs[i].difficulty === "week-3" &&
+            fedlawQs[i].subtopic === "financial-crimes-laws"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(fedlawQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic FAIRNESS-LAWS
+      if ($("input[id='fairness-laws-box']").is(":checked")) {
+        for (let i = 0; i < fedlawQs.length; i++) {
+          if (
+            fedlawQs[i].difficulty === "week-3" &&
+            fedlawQs[i].subtopic === "fairness-laws"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(fedlawQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic ECOA
+      if ($("input[id='ecoa-box']").is(":checked")) {
+        for (let i = 0; i < fedlawQs.length; i++) {
+          if (
+            fedlawQs[i].difficulty === "week-3" &&
+            fedlawQs[i].subtopic === "ecoa"
+          ) {
             const filteredArray = [];
             filteredArray.push(fedlawQs[i]);
             questionsArray.push.apply(questionsArray, filteredArray);
@@ -1220,6 +1674,32 @@ $(document).ready(() => {
           }
         }
       }
+       // subtopic BORROWER FRAUD
+       if ($("input[id='borrower-fraud-box']").is(":checked")) {
+        for (let i = 0; i < ethicsQs.length; i++) {
+          if (
+            ethicsQs[i].difficulty === "week-3" &&
+            ethicsQs[i].subtopic === "borrower-fraud"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(ethicsQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic INDUSTRY FRAUD
+      if ($("input[id='industry-fraud-box']").is(":checked")) {
+        for (let i = 0; i < ethicsQs.length; i++) {
+          if (
+            ethicsQs[i].difficulty === "week-3" &&
+            ethicsQs[i].subtopic === "industry-fraud"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(ethicsQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
       // main topic USC
       if ($("input[id='usc-box']").is(":checked")) {
         for (let i = 0; i < uscQs.length; i++) {
@@ -1230,52 +1710,35 @@ $(document).ready(() => {
           }
         }
       }
+      // subtopic AGENCIES
+      if ($("input[id='agencies-box']").is(":checked")) {
+        for (let i = 0; i < uscQs.length; i++) {
+          if (
+            uscQs[i].difficulty === "week-3" &&
+            uscQs[i].subtopic === "agencies"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(uscQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
+      // subtopic AGENCIES
+      if ($("input[id='your-license-box']").is(":checked")) {
+        for (let i = 0; i < uscQs.length; i++) {
+          if (
+            uscQs[i].difficulty === "week-3" &&
+            uscQs[i].subtopic === "your-license"
+          ) {
+            const filteredArray = [];
+            filteredArray.push(uscQs[i]);
+            questionsArray.push.apply(questionsArray, filteredArray);
+          }
+        }
+      }
     }
     // -------------------------------------------------------------------------------------------
     // ===========================================================================================
-
-    // old if statements for pushing options to new array ========================================
-
-    // if ($("input[id='fed-law-box']").is(":checked")) {
-    //   //   console.log("fedlaw");
-    //   questionsArray.push.apply(questionsArray, fedlawQs);
-    // }
-    // if ($("input[id='ethics-box']").is(":checked")) {
-    //   // console.log("ethics");
-    //   questionsArray.push.apply(questionsArray, ethicsQs);
-    // }
-    // if ($("input[id='mlo-box']").is(":checked")) {
-    //   // console.log("mlo");
-    //   questionsArray.push.apply(questionsArray, mloQs);
-    // }
-    // if ($("input[id='gmk-box']").is(":checked")) {
-    //   // console.log("gmk");
-    //   questionsArray.push.apply(questionsArray, gmkQs);
-    // }
-    // if ($("input[id='usc-box']").is(":checked")) {
-    //   // console.log("usc");
-    //   questionsArray.push.apply(questionsArray, uscQs);
-    // }
-    if ($("input[id='respa-box']").is(":checked")) {
-      //   console.log("fedlaw");
-      questionsArray.push.apply(questionsArray, respaQs);
-    }
-    if ($("input[id='tila-box']").is(":checked")) {
-      // console.log("ethics");
-      questionsArray.push.apply(questionsArray, tilaQs);
-    }
-    if ($("input[id='ecoa-box']").is(":checked")) {
-      // console.log("mlo");
-      questionsArray.push.apply(questionsArray, ecoaQs);
-    }
-    if ($("input[id='fha-box']").is(":checked")) {
-      // console.log("gmk");
-      questionsArray.push.apply(questionsArray, fhaQs);
-    }
-    // if ($("input[id='disclosures-box']").is(":checked")) {
-    //   // console.log("usc");
-    //   questionsArray.push.apply(questionsArray, disclosureQs);
-    // }
 
     console.log(questionsArray);
 
