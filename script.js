@@ -20,6 +20,12 @@ $(document).ready(() => {
       subtopic: "application",
     },
     {
+      question: "What is section XIII (8) of the URLA?",
+      answer: "Declarations",
+      difficulty: "week-3",
+      subtopic: "application",
+    },
+    {
       question:
         "Who is ultimately responsible for the accuracy of the information on the URLA?",
       answer: "The borrower",
@@ -94,10 +100,77 @@ $(document).ready(() => {
       difficulty: "week-1",
       subtopic: "disclosures",
     },
+    {
+      question: "Per TILA, what two disclosures must be delivered to a borrower receiving an *ARM* product prior to charging non-refundable fees?",
+      answer: "The CHARM and Early ARM",
+      difficulty: "week-3",
+      subtopic: "disclosures",
+    },
+    {
+      question: "What is section IV (4) of the URLA?",
+      answer: "Employment information",
+      difficulty: "week-3",
+      subtopic: "application"
+    },
+    {
+      question: "What are the 3 different loan funding methods?",
+      answer: "Table, Warehouse, Direct",
+      difficulty: "week-2",
+      subtopic: "closing"
+    },
+    {
+      question: "What is the difference between closing and consummation?",
+      answer: "At closing, the documents are signed and funds are prepared for disbursement by the closing agent, but the borrower is not yet contractually obligated. At consummation, funds are dispersed and the borrower becomes contractually obligated to the loan.",
+      difficulty: "week-2",
+      subtopic: "closing"
+    },
+    {
+      question: "What is the difference between a Wet and Dry settlement?",
+      answer: "On a wet settlement, consummation and closing occur on the same day (the ink on the contract is still wet when the funds are disbursed). On a dry settlement, consummation occurs sometime after closing; generally speaking, after the 3-business day rescission period (so by the time the funds are disbursed, the ink on the contract has dried).",
+      difficulty: "week-3",
+      subtopic: "closing"
+    },
+    {
+      question: "What are the 2 types of title insurance a borrower has, which is required, and who pays for them, respectively?",
+      answer: "Lenders and Owners; Lenders is required, while owners is optional, but the borrower pays for both.",
+      difficulty: "week-2",
+      subtopic: "insurances"
+    },
+    {
+      question: "What are the different appraisal approaches?",
+      answer: "Market/Sales comparison, Cost, Income",
+      difficulty: "week-1",
+      subtopic: "third-party-services"
+    },
+    {
+      question: "What is PMI, when is it required, and why is it used?",
+      answer: "PMI is private mortgage insurance. It's required on conventional loans with an LTV greater than 80%, and it is the lender's way of mitigating risk on loans where the borrower doesn't have as much 'skin in the game.",
+      difficulty: "week-2",
+      subtopic: "insurances"
+    },
+
   ];
   console.log("MLO has " + mloQs.length + " questions");
 
   let gmkQs = [
+    {
+      question: "What is the difference between the CHARM and the Early ARM?",
+      answer: "The CHARM is the consumer handbook on adjustable rate mortgages, which gives general information on ARM products. The Early ARM is a disclosure giving specific information about the client's ARM product.",
+      difficulty: "week-2",
+      subtopic: "products",
+    },
+    {
+      question: "What is the differences between a HEL and  HELOC?",
+      answer: "A HEL is a one time lump sum taken out of your equity (closed end), while a HELOC is similar to a credit card which can be used to make multiple draws from your equity as long as you pay the balance down (open end).",
+      difficulty: "week-1",
+      subtopic: "products",
+    },
+    {
+      question: "What are the 4C qualifying standards for an FHA loan?",
+      answer: "Minimum credit: 500, Capacity: 31/43% DTI, Collateral: (if credit score is between 500-579) 90% LTV/(if credit score is 580+) 96.5% Purchase LTV or 97.75% Refi LTV, Cash: Borrwer may need cash for closing costs/prepaids",
+      difficulty: "week-3",
+      subtopic: "programs",
+    },
     {
       question: "What is the automated underwriting system for FHA and VA?",
       answer: "TOTAL (Technology Open to Approved Lenders)",
@@ -1313,7 +1386,6 @@ $(document).ready(() => {
           }
         }
       }
-
       // subtopic DISCLOSURES
       if ($("input[id='disclosures-box']").is(":checked")) {
         for (let i = 0; i < mloQs.length; i++) {
@@ -1984,20 +2056,8 @@ $(document).ready(() => {
           </div>
         </div>`;
 
-      // console.log(questionsArray[i].question);
       // append questions to page
       $("#new-question").append(newQuestion);
-
-      // arrow function doesn't grab parents the same! also can't use it with methods
-      // ------------------------------------------------------------
-      // place this in literal to grab?
-      // ------------------------------------------------------------
-
-      // build a button into the template
-      // on click, hide or remove
-      $("#old-q-btn").on("click", () => {
-        this.remove();
-      });
     }
   }
 });
