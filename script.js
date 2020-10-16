@@ -1,7 +1,5 @@
 $(document).ready(() => {
-  // modal on doc ready for explanation of use
-  // $(".modal").modal();
-  // $('.modal').modal('open');
+  // sidenav tutorial
   $('.sidenav').sidenav();
 
 
