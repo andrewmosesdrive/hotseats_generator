@@ -6,6 +6,24 @@ $(document).ready(() => {
   // create array for each set of questions based on major topic (with property: subtopic and property: difficulty) with of final Array holding question and answer of choices
   let mloQs = [
     {
+      question: "What takes place at closing?",
+      answer: "The client signs all the closing documents and commits to the loan",
+      difficulty: "week-1",
+      subtopic: "closing"
+    },
+    {
+      question: "What document gives the client an estimate of all costs for the entire transaction?",
+      answer: "The loan estimate",
+      difficulty: "week-1",
+      subtopic: "disclosures"
+    },
+    {
+      question: "What document gives the client all the final costs for the entire transaction?",
+      answer: "The closing disclosure",
+      difficulty: "week-1",
+      subtopic: "disclosures"
+    },
+    {
       question:
         "After Fannie and Freddie have purchased loans, the bundling of those loans into mortgage backed securities and the subsequent sale on the secondary market is known as what?",
       answer: "Securitization",
@@ -534,6 +552,30 @@ $(document).ready(() => {
   console.log("USC has " + uscQs.length + " questions");
 
   let fedlawQs = [
+    {
+      question: "What does RESPA stand for?",
+      answer: "Real Estate Settlement Procedures Act",
+      difficulty: "week-1",
+      subtopic: "respa"
+    },
+    {
+      question: "What does TILA stand for?",
+      answer: "Truth In Lending Act",
+      difficulty: "week-1",
+      subtopic: "tila"
+    },
+    {
+      question: "What is RESPA's regulation letter?",
+      answer: "Reg X",
+      difficulty: "week-1",
+      subtopic: "respa"
+    },
+    {
+      question: "What is TILA's regulation letter?",
+      answer: "Regulation Z",
+      difficulty: "week-1",
+      subtopic: "tila"
+    },
     {
       question: "What does TILA stand for and what regulation letter is it?",
       answer: "Truth in Lending Act, Reg Z",
