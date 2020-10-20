@@ -6,6 +6,54 @@ $(document).ready(() => {
   // create array for each set of questions based on major topic (with property: subtopic and property: difficulty) with of final Array holding question and answer of choices
   let mloQs = [
     {
+      question: "What makes up a PITI payment?",
+      answer: "Principal, Interest, Taxes (property), Insurance (and HOA dues if applicable).",
+      difficulty: "week-1",
+      subtopic: "repayment"
+    },
+    {
+      question: "What is hazard insurance?",
+      answer: "A type of insurance that covers the home itself in cases of fire or any other natural disasters.",
+      difficulty: "week-1",
+      subtopic: "insurances"
+    },
+    {
+      question: "What is homeowner's insurance?",
+      answer: "A type of insurance that covers the contents of the home, not the home itself.",
+      difficulty: "week-1",
+      subtopic: "insurances"
+    },
+    {
+      question: "What are the two types of insurance in the PITI payment?",
+      answer: "Mortgage insurance and Homeowner's insurance.",
+      difficulty: "week-1",
+      subtopic: "repayment"
+    },
+    {
+      question: "What kind of taxes are included in the PITI payment?",
+      answer: "Property taxes",
+      difficulty: "week-1",
+      subtopic: "repayment"
+    },
+    {
+      question: "What does the interest represent in the PITI payment?",
+      answer: "The amount you pay each month to borrow money (the interest is the lender's profit).",
+      difficulty: "week-1",
+      subtopic: "repayment"
+    },
+    {
+      question: "What does the principal represent in the PITI payment?",
+      answer: "The amount you pay each month to reduce the loan balance (the principal being the actual money you borrowed).",
+      difficulty: "week-1",
+      subtopic: "repayment"
+    },
+    {
+      question: "What is the purpose of the HLTK?",
+      answer: "It helps clients to make better decisions when buying a home and informs them of what to expect when buying a home. Essentially, it explains the whole homebuying process in an easy-to-understand way.",
+      difficulty: "week-1",
+      subtopic: "disclosures"
+    },
+    {
       question: "What takes place at closing?",
       answer: "The client signs all the closing documents and commits to the loan",
       difficulty: "week-1",
@@ -172,6 +220,24 @@ $(document).ready(() => {
 
   let gmkQs = [
     {
+      question: "What ratio do we use to measure a clients Capacity? What is the formula?",
+      answer: "DTI; PITI+HOA/GMI",
+      difficulty: "week-1",
+      subtopic: "mortgage-math"
+    },
+    {
+      question: "What is the percentage of the monthly income that a client's PITI payment should stay at or under to be considered 'affordable'?",
+      answer: "28%",
+      difficulty: "week-1",
+      subtopic: "programs"
+    },
+    {
+      question:"How can a client avoid paying PMI?",
+      answer: "By bringing at least 20% for the down payment.",
+      difficulty: "week-1",
+      subtopic: "programs"
+    },
+    {
       question: "What is the difference between the CHARM and the Early ARM?",
       answer: "The CHARM is the consumer handbook on adjustable rate mortgages, which gives general information on ARM products. The Early ARM is a disclosure giving specific information about the client's ARM product.",
       difficulty: "week-2",
@@ -302,6 +368,12 @@ $(document).ready(() => {
   console.log("Ethics has " + ethicsQs.length + " questions");
 
   let uscQs = [
+    {
+      question: "What does the CFPB stand for and what does it do?",
+      answer: "Consumer Financial Protection Bureau; The federal agency that helps consumer finance markets work by making rules more effective, by consistently and fairly enforcing those rules, empowering consumers to take more control over economic lives.",
+      difficulty: "week-1",
+      subtopic: "agencies"
+    },
     {
       question: "What is the NMLS?",
       answer: "A database which houses informations on MLO's",
@@ -552,6 +624,7 @@ $(document).ready(() => {
   console.log("USC has " + uscQs.length + " questions");
 
   let fedlawQs = [
+   
     {
       question: "What does RESPA stand for?",
       answer: "Real Estate Settlement Procedures Act",
