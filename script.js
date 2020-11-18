@@ -5,6 +5,40 @@ $(document).ready(() => {
 
   // create array for each set of questions based on major topic (with property: subtopic and property: difficulty) with of final Array holding question and answer of choices
   let mloQs = [
+    // mlo-timeline has 5 questions for EACH difficult level
+    // repayment has 5 questions for week-1, no questions for week-2 or week-3
+    // insurances has 2 week-1 and 2 week-2, no questions for week-3
+    // disclosures has 4 week-1, 5 week-2, 2 week-3
+    {
+      question: "What are the 4 C's?",
+      answer: "Cash, Collateral, Credit, Capacity",
+      difficulty: "week-1",
+      subtopic: "mlo-timeline"
+    },
+    {
+      question: "Why is a client's credit important to us as an MLO?",
+      answer: "It lets us see how well a client pays back debts and how much debt they currently have",
+      difficulty: "week-1",
+      subtopic: "mlo-timeline"
+    },
+    {
+      question: "Why is a client's capacity important to us as an MLO?",
+      answer: "It lets us see how much debt a client can take on and allows us to compare their debt to their income (DTI).",
+      difficulty: "week-1",
+      subtopic: "mlo-timeline"
+    },
+    {
+      question: "Why is a client's collateral important to us as an lender?",
+      answer: "The property (collateral) is pledged as security for the loan, so we want to verify the value and ownership of it.",
+      difficulty: "week-1",
+      subtopic: "mlo-timeline"
+    },
+    {
+      question: "What four pieces of information do we need from a client to pull their credit report?",
+      answer: "Social, Address, Name, DOB",
+      difficulty: "week-1",
+      subtopic: "mlo-timeline"
+    },
     {
       question: "What makes up a PITI payment?",
       answer: "Principal, Interest, Taxes (property), Insurance (and HOA dues if applicable).",
@@ -77,6 +111,48 @@ $(document).ready(() => {
       answer: "Securitization",
       difficulty: "week-2",
       subtopic: "mlo-timeline",
+    },
+    {
+      question: "After we receive ALIENS from a client and they review their initial disclosures, what will we need from them prior to collecting any non-refundable fees?",
+      answer: "Intent to proceed",
+      difficulty: "week-2",
+      subtopic: "mlo-timeline"
+    },
+    {
+      question: "What is the difference between closing and consummation?",
+      answer: "Closing is when all parties commit to the loan and sign the documents; consummation is when funds have been dispursed and the client it contractually obligated to the loan.",
+      difficulty: "week-2",
+      subtopic: "mlo-timeline"
+    },
+    {
+      question: "What is the difference in the responsibilities of a processor and an underwriter?",
+      answer: "A processor collects documents and verifies information; an underwriter reviews the loan application to analyze risk and make the final determination of whether to approve or deny a loan",
+      difficulty: "week-2",
+      subtopic: "mlo-timeline"
+    },
+    {
+      question: "What takes place at recording?",
+      answer: "The closing agent files the documents at the county registrar to officially record it with the state.",
+      difficulty: "week-2",
+      subtopic: "mlo-timeline"
+    },
+    {
+      question: "What are each of the 5 steps in the title work process?",
+      answer: "Title search, title report (abstract of title), technical review, preparation of a commitment to insure (binder), title insurance (lenders/owners).",
+      difficulty: "week-3",
+      subtopic: "mlo-timeline"
+    },
+    {
+      question: "What is the difference between intent to proceed and permissible purpose, and when does each take place in the MLO timeline?",
+      answer: "Intent to proceed is what the borrower gives us to let us know they want to move forward with the loan, and it takes place after they review their initial disclosures; permissible purpose is what we need to pull credit on a client (permission and a valid purpose), and it takes place during the first call, before we actually pull their credit report.",
+      difficulty: "week-3",
+      subtopic: "mlo-timeline"
+    },
+    {
+      question: "Explain the difference between completed application and *the* application",
+      answer: "Completed application means we have the 6 pieces of information necessary to make an offer and give initial disclosures (ALIENS); *the* application is the URLA (the borrowers formal request for credit).",
+      difficulty: "week-3",
+      subtopic: "mlo-timeline"
     },
     {
       question:
