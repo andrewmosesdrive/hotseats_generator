@@ -5,10 +5,70 @@ $(document).ready(() => {
 
   // create array for each set of questions based on major topic (with property: subtopic and property: difficulty) with of final Array holding question and answer of choices
   let mloQs = [
-    // mlo-timeline has 5 questions for EACH difficult level
-    // repayment has 5 questions for week-1, no questions for week-2 or week-3
+    // mlo-timeline has 5 questions for EACH difficulty level X
+    // repayment has 5 questions for EACH difficulty level X
     // insurances has 2 week-1 and 2 week-2, no questions for week-3
     // disclosures has 4 week-1, 5 week-2, 2 week-3
+    {
+      question: "What is reconveyance?",
+      answer: "Reconveyance occurs when the borrower pays off the mortgage debt in full and the lender removes the lien on their property.",
+      difficulty: "week-2",
+      subtopic: "repayment"
+    },
+    {
+      question: "How long can a borrower be in default before they will be issued a demand letter?",
+      answer: "90 days",
+      difficulty: "week-2",
+      subtopic: "repayment"
+    },
+    {
+      question: "What is the difference between forebearance and loan modification?",
+      answer: "Forebearance is a form of short-term relief where the borrow can push back their payments, usually paying the full balance at the end of the agreed upon date to get back on track; loan modification is a revision or change of the existing mortgage loan (usually changing the interest rate or loan term)",
+      difficulty: "week-2",
+      subtopic: "repayment"
+    },
+    {
+      question: "After how many months of missed payments can foreclosure proceedings begin?",
+      answer: "4 months",
+      difficulty: "week-2",
+      subtopic: "repayment"
+    },
+    {
+      question: "What is the difference between a lien theory state and title theory state?",
+      answer: "In a lien theory state, the borrower holds the title (the lender places a lien on the collateral); in a title theory state, the lender holds the title until the debt is paid in full.",
+      difficulty: "week-2",
+      subtopic: "repayment"
+    },
+    {
+      question: "What is the difference between a judicial, non-judicial, and strict foreclosure?",
+      answer: "In a judicial foreclosure, a suit is filed in court, and if the court finds in favor of the lender, they may recover the property to sell in order to recover their losses; in a non-judicial foreclosure, the lender does not need to go to court to sell the home in the event of default; in a strict foreclosure, the lender must still go to court, but is not obligated to sell it to recover their losses",
+      difficulty: "week-3",
+      subtopic: "repayment"
+    },
+    {
+      question: "In pre-foreclosure redemption, how does the borrower avoid foreclosure?",
+      answer: "By paying the loan's principal balance as well as any accrued interest and fees.",
+      difficulty: "week-3",
+      subtopic: "repayment"
+    },
+    {
+      question: "How are a refinance and loan modification different?",
+      answer: "In a refinance, you are replacing the existing loan with a new loan; in a loan modification, you are modifying the terms of the *existing* loan",
+      difficulty: "week-3",
+      subtopic: "repayment"
+    },
+    {
+      question: "In the event of a foreclosure, a property sale will be schedule through whom?",
+      answer: "The local sheriff or public trustee",
+      difficulty: "week-3",
+      subtopic: "repayment"
+    },
+    {
+      question: "What information will be included on a deed of reconveyance?",
+      answer: "Names of lender and borrower, address and legal identification of the property, initial loan amount, where the original transaction documents were filed",
+      difficulty: "week-3",
+      subtopic: "repayment"
+    },
     {
       question: "What are the 4 C's?",
       answer: "Cash, Collateral, Credit, Capacity",
